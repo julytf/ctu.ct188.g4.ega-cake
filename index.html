@@ -7,18 +7,19 @@
         <title>EGA Cake</title>
         <link rel="stylesheet" href="assets/css/grid.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
         <style testing>
             /* body {
 height: 1000px;
 } */
 
             * {
-                min-height: 30px;
+                /* min-height: 30px; */
                 /* border: 1px solid White; */
                 /* background: radial-gradient(black, white); */
-                background: #00000010;
+                /* background: #00000010; */
                 /* margin: 1px; */
-                box-sizing: border-box;
+                /* box-sizing: border-box; */
             }
         </style>
     </head>
@@ -26,7 +27,10 @@ height: 1000px;
     <body>
         <div class="top-site-banner">
             <!-- promotion -->
-            <img src="assets/images/top_banner.jpg" alt="">
+            <a href="">
+                <img class="img-fluid c-none" src="assets/images/top_banner.jpg" alt="">
+                <img class="img-fluid l-none m-none" src="assets/images/top_banner_mb.jpg" alt="">
+            </a>
             <button class="close"></button>
         </div>
         <header class="header">
@@ -39,72 +43,102 @@ height: 1000px;
                         </div>
                     </div>
                     <div class="col l-5">
-                        <div class="header__search">
+                        <div class="search">
                             <form
                                 action="timkiem.html"
                                 method="get"
-                                class="header__search-form"
+                                class="search-form"
                             >
                                 <input
                                     type="text"
                                     name="q"
                                     id=""
-                                    class="header__search-input"
+                                    class="search-input"
+                                    placeholder="Bạn cần tìm gì..."
                                 />
-                                <button class="header__search-btn">
-                                    <i class=""></i>
+                                <button class="search-btn">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
                                 </button>
                             </form>
-                            <ul class="header__search-list">
-                                <li>a</li>
-                                <li>b</li>
-                                <li>c</li>
-                                <li>d</li>
+                            <ul class="search-list">
+                                <li><a href="#">Bánh kem</a></li>
+                                <li><a href="#">Cupcake</a></li>
+                                <li><a href="#">Donut</a></li>
+                                <li><a href="#">Socola</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col l-4">
                         <ul class="header__menu">
-                            <li>item 1</li>
-                            <li>item 2</li>
-                            <li>item 3</li>
-                            <li>item 4</li>
+                            <li class="header__menu-item">
+                                <a href="#">
+                                    <img class="header__menu-icon" src="assets/images/order-icon.png" alt="" style="">
+                                    <span>Đơn hàng</span>
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#">
+                                    <img class="header__menu-icon" src="assets/images/address-icon.png" alt="">
+                                    <span>Cửa hàng</span>
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#">
+                                    <img class="header__menu-icon" src="assets/images/account-icon.png" alt="">
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#">
+                                    <img class="header__menu-icon" src="assets/images/cart-icon.png" alt="">
+                                    <span>Giỏ hàng</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </header>
-        <nav class="nav grid wide">
-            <div class="row">
-                <ul class="nav__list col l-11">
-                    <li>item 1</li>
-                    <li>item 2</li>
-                    <li>item 3</li>
-                    <li>item 4</li>
-                    <li>item 5</li>
-                </ul>
-                <div class="nav__btn col l-1">
-                    <button>inc</button>
-                    <button>dec</button>
+        <nav class="nav">
+            <div class=" grid wide">
+                <div class="row">
+                    <ul class="nav__list col l-11">
+                        <li class="nav__list-item"><a href="#">Trang chủ</a></li>
+                        <li class="nav__list-item"><a href="#">Giới thiệu</a></li>
+                        <li class="nav__list-item"><a href="#">Quà tặng 08/03</a></li>
+                        <li class="nav__list-item"><a href="#">Chương trình khuyến mãi</a></li>
+                        <li class="nav__list-item"><a href="#">Bánh ngon mỗi ngày</a></li>
+                        <li class="nav__list-item"><a href="#">Công thức làm bánh</a></li>
+                        <li class="nav__list-item"><a href="#">Chuyên mục làm bánh</a></li>
+                        <li class="nav__list-item"><a href="#">Liên hệ</a></li>
+                        <li class="nav__list-item"><a href="#">Góp ý / Khiếu nại</a></li>
+                        <li class="nav__list-item"><a href="#">Tìm kiếm</a></li>
+                    </ul>
+                    <div class="nav__btn col l-1">
+                        <i class="fa-solid fa-angle-left nav__btn-icon disabled"></i>
+                        <i class="fa-solid fa-angle-right nav__btn-icon"></i>
+                    </div>
                 </div>
             </div>
         </nav>
-        <main class="main grid wide" style="border: 5px solid">
-            <div class="row">
-                <div class="col l-3">
-                    <aside></aside>
-                </div>
-                <div class="col l8">
-                    <div class="grid">
-                        <div class="row">
-                            <div class="slider col l-12"></div>
-                        </div>
-                        <div class="row">
-                            <div class="voucher">
-                                <div class="col l-3 voucher__item">voucher 1</div>
-                                <div class="col l-3 voucher__item">voucher 2</div>
-                                <div class="col l-3 voucher__item">voucher 3</div>
-                                <div class="col l-3 voucher__item">voucher 4</div>
+        <main class="main" style="border: 5px solid">
+            <div class=" grid wide">
+                <div class="row">
+                    <div class="col l-3">
+                        <aside>sidebar</aside>
+                    </div>
+                    <div class="col l8">
+                        <div class="grid">
+                            <div class="row">
+                                <div class="slider col l-12">slider</div>
+                            </div>
+                            <div class="row">
+                                <div class="voucher">
+                                    <div class="col l-3 voucher__item">voucher 1</div>
+                                    <div class="col l-3 voucher__item">voucher 2</div>
+                                    <div class="col l-3 voucher__item">voucher 3</div>
+                                    <div class="col l-3 voucher__item">voucher 4</div>
+                                </div>
                             </div>
                         </div>
                     </div>
