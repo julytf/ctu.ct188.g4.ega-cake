@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.close {
+    /* outline: none; */
+    border: 0;
+}
+
+.close::before {
+    content: "✕";
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    background: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.top-site-banner {
+    width: 100vw;
+    height: 45px;
+    background-color: #a50a06;
+}
+
+.header {
+    width: 100vw;
+    height: 75px;
+    position: sticky;
+    top: 0;
+}
+
+.header__search-list > li {
+    display: inline-block;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.nav {
+    width: 100vw;
+    height: 45px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.voucher {
+    display: flex;
+}
