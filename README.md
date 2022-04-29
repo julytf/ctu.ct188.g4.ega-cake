@@ -7,7 +7,7 @@
  * Le Chi Linh
 
 
-[Assignment](https://docs.google.com/document/d/1C701cqNiHubA1yAw2FGpKGZStVVStzcwnDOUVTQPX2E/edit)
+Assignment: [here](https://docs.google.com/document/d/1C701cqNiHubA1yAw2FGpKGZStVVStzcwnDOUVTQPX2E/edit)
 
 
 
