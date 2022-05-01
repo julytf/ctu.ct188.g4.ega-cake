@@ -7,19 +7,33 @@
         <title>EGA Cake</title>
         <link
             rel="icon"
-            href="/assets/images/favicon.png"
+            href="assets/images/favicon.png"
             type="image/x-icon"
         />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         />
-        <link rel="stylesheet" href="/assets/css/grid.css" />
-        <link rel="stylesheet" href="/assets/css/main.css" />
-        <script src="/assets/js/main.js" defer></script>
+        <link rel="stylesheet" href="assets/css/grid.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/trangchu.css" />
+        <script src="assets/js/main.js" defer></script>
+
+        <style testing>
+            main {
+                min-height: 10px;
+                border: 1px solid green;
+            }
+            main * {
+                min-height: 10px;
+                /* border: 1px solid green; */
+                /* padding: 1px; */
+                box-sizing: border-box;
+            }
+        </style>
     </head>
 
-    <body>
+    <body class="body">
         <!-- header -->
         <div class="top-site-banner">
             <a href="">
@@ -188,7 +202,112 @@
         </nav>
 
         <!-- main -->
-        <main class="main"></main>
+        <main class="main">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3">
+                        <aside class="section sidebar-menu">
+                            <div class="sidebar-menu__header section__header">
+                                <i class="icon"></i>
+                                header
+                            </div>
+                            <ul class="sidebar-menu__body">
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                                <li>8</li>
+                                <li>9</li>
+                                <li>10</li>
+                                <li>11</li> 
+                            </ul>
+                            <div class="sidebar-menu__footer">
+                                footer
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="col l-9">
+                        <div class="row">
+                            <div class="section slider" style="width: 100%; height: 40.6355%;">
+                                <div class="slider__prev">
+                                    <i class="fa-solid fa-angle-left icon"></i>
+                                </div>
+                                <div class="slider__next">
+                                    <i class="fa-solid fa-angle-right icon"></i>
+                                </div>
+                                <div class="slider__slides">
+                                    <input type="radio" class="slider__radio" id="sliderRadio1" name="sliderRadio" checked>
+                                    <img class="slider__img" src="assets/images/slider_1.jpg" alt="">
+                                    <input type="radio" class="slider__radio" id="sliderRadio2" name="sliderRadio">
+                                    <img class="slider__img" src="assets/images/slider_2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="section coupons">
+                                <div class="grid">
+                                    <div class="row no-gutters">
+                                        <div class="col l-3">
+                                            <div class="coupon">
+                                                <div class="coupon_head">
+                                                    <div class="coupon__title">title</div>
+                                                    <div class="coupon__desc">desc</div>
+                                                </div>
+                                                <div class="coupon__foot">
+                                                    <div class="coupon__copy">copy</div>
+                                                    <div class="coupon__info">info</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3">
+                                            <div class="coupon">
+                                                <div class="coupon_head">
+                                                    <div class="coupon__title">title</div>
+                                                    <div class="coupon__desc">desc</div>
+                                                </div>
+                                                <div class="coupon__foot">
+                                                    <div class="coupon__copy">copy</div>
+                                                    <div class="coupon__info">info</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3">
+                                            <div class="coupon">
+                                                <div class="coupon_head">
+                                                    <div class="coupon__title">title</div>
+                                                    <div class="coupon__desc">desc</div>
+                                                </div>
+                                                <div class="coupon__foot">
+                                                    <div class="coupon__copy">copy</div>
+                                                    <div class="coupon__info">info</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col l-3">
+                                            <div class="coupon">
+                                                <div class="coupon_head">
+                                                    <div class="coupon__title">title</div>
+                                                    <div class="coupon__desc">desc</div>
+                                                </div>
+                                                <div class="coupon__foot">
+                                                    <div class="coupon__copy">copy</div>
+                                                    <div class="coupon__info">info</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section section-flashsale">
+                                <div class="section__header section__header--pri"></div>
+                                <div class="section__body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <!-- footer -->
         <div class="top-footer">
             <div class="grid wide">
