@@ -75,6 +75,16 @@ a {
     padding-right: 10px;
 }
 
+.px-20 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .py-20 {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -84,8 +94,6 @@ a {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-
-
 
 .p-6 {
     padding: 6px;
@@ -202,6 +210,16 @@ a {
     margin: 10px 20px;
 }
 
+.section {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.section__header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /* site */
 
 .top-site-banner {
@@ -218,6 +236,7 @@ a {
     position: sticky;
     top: 0;
     /* padding: 6px; */
+    z-index: 100;
 }
 
 .header a {
@@ -303,8 +322,13 @@ a {
     cursor: default;
 }
 
-.voucher {
-    display: flex;
+.body {
+    background-color: var(--body-background);
+}
+
+.section {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .top-footer {
