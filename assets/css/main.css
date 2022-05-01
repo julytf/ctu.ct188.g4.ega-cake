@@ -254,7 +254,12 @@ a {
 }
 
 .nav a {
+    line-height: 45px;
     color: white;
+}
+
+.nav input[type=radio] {
+    display: none;
 }
 
 .nav__list {
@@ -268,6 +273,12 @@ a {
     font-size: 14px;
     display: flex;
     align-items: center;
+    border-bottom: 3px solid transparent;
+    box-sizing: border-box;
+}
+
+.nav__list-item:hover {
+    border-color: var(--primary-color);
 }
 
 .nav__list-item > a {
