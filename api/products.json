@@ -1,0 +1,332 @@
+[
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_576d9db8d9c04af498dd6ba81f711c72_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_de77b486378e498380cd13cfd3aaf031_medium.jpg",
+        "name": "Bánh cupcake glory",
+        "link": "https://ega-cake.myharavan.com/products/banh-cupcake-glory",
+        "price": "110,000₫",
+        "prediscount-price": "150,000₫",
+        "discount": "-27%",
+        "soldout": true
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_a16a0c951a374b43ba3dc226314796ba_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_2809da0933f143589f1f70bc437c3a5b_medium.jpg",
+        "name": "Bánh chocolate raspberry cupcakes",
+        "link": "https://ega-cake.myharavan.com/products/banh-chocolate-raspberry-cupcakes",
+        "price": "130,000₫",
+        "prediscount-price": "150,000₫",
+        "discount": "-13%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_41700583bff0415baa135efde8e80443_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_c2ad10b145714d5f985a830c75442278_medium.jpg",
+        "name": "Bánh cupcake queen",
+        "link": "https://ega-cake.myharavan.com/products/banh-cupcake-queen",
+        "price": "105,000₫",
+        "prediscount-price": "150,000₫",
+        "discount": "-30%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_889802a0daf549418400aca950942256_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_dfa7f157e318423294c3c24836ff62e3_medium.jpg",
+        "name": "Bánh pumpkin spice cupcakes",
+        "link": "https://ega-cake.myharavan.com/products/banh-pumpkin-spice-cupcakes",
+        "price": "109,000₫",
+        "prediscount-price": null,
+        "discount": null,
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_749932d0d0274a279346df81a91c9b35_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_2c02919070e24a6c93de51c13435c9f3_medium.jpg",
+        "name": "Bánh blue sky cupcakes",
+        "link": "https://ega-cake.myharavan.com/products/banh-blue-sky-cupcakes",
+        "price": "190,000₫",
+        "prediscount-price": null,
+        "discount": null,
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_70b7527564c1450ab7dcae78c450b618_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_70b053e760ae484dbbd09be8200114d7_medium.jpg",
+        "name": "Bánh red sugar flower cupcakes",
+        "link": "https://ega-cake.myharavan.com/products/banh-red-sugar-flower-cupcakes",
+        "price": "190,000₫",
+        "prediscount-price": null,
+        "discount": null,
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_0cd6c872449e47a2857be52bd791b704_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_a4b3b2123c884c128f4a1c360b8cb1ba_medium.jpg",
+        "name": "Bánh sangria cupcakes",
+        "link": "https://ega-cake.myharavan.com/products/banh-sangria-cupcakes",
+        "price": "190,000₫",
+        "prediscount-price": null,
+        "discount": null,
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/video-banh-sweet-love-cupcake_87b8bc5be382445fa14544f39ecd2a41_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_97ae9bf6e90f453bb022399b6e332b1a_medium.jpg",
+        "name": "Bánh sweet love cupcakes",
+        "link": "https://ega-cake.myharavan.com/products/banh-sweet-love-cupcakes",
+        "price": "190,000₫",
+        "prediscount-price": null,
+        "discount": null,
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_875edb8e3655417d96eb72b350213388_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_2696d70f0cd342f380494611bf1dee31_medium.jpg",
+        "name": "Bánh cuộn kem chocolate",
+        "link": "https://ega-cake.myharavan.com/products/banh-cuon-kem-chocolate",
+        "price": "69,000₫",
+        "prediscount-price": "109,000₫",
+        "discount": "-37%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_ccad3abc3e3a424a979c641ee6d7a9c7_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_7e59ba3694c84cc2b560cec7e39e0ff0_medium.jpg",
+        "name": "Bánh sừng bò phủ chocolate",
+        "link": "https://ega-cake.myharavan.com/products/banh-sung-bo-phu-chocolate",
+        "price": "89,000₫",
+        "prediscount-price": "110,000₫",
+        "discount": "-19%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_79ae8a61268344ffb4d6ba88ededd2a0_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_13f8049fdaa44460bc1bcd533a9c36e2_medium.jpg",
+        "name": "Bánh tổ ong kèm kem vani",
+        "link": "https://ega-cake.myharavan.com/products/banh-to-ong-kem-kem-vani",
+        "price": "119,000₫",
+        "prediscount-price": "129,000₫",
+        "discount": "-8%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_1d4cb425bf4e429aad7db32268b8eac4_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_55afb4b6c8994c02b3148fd402f4ce81_medium.jpg",
+        "name": "Bánh mật dâu tây",
+        "link": "https://ega-cake.myharavan.com/products/banh-mat-dau-tay",
+        "price": "59,000₫",
+        "prediscount-price": "89,000₫",
+        "discount": "-34%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_2e18cb8f53c14b1e952763c840068586_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_e42779a98de9476595277b35f7a8c8c5_medium.jpg",
+        "name": "Heavy Duty Paper Car",
+        "link": "https://ega-cake.myharavan.com/products/heavy-duty-paper-car",
+        "price": "560,000₫",
+        "prediscount-price": "720,000₫",
+        "discount": "-22%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_87da8755603d4936bde97ddaaf806f33_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_bd2d9aa2ce884215adefe43321e824ec_medium.jpg",
+        "name": "Mediocre Granite Plate",
+        "link": "https://ega-cake.myharavan.com/products/mediocre-granite-plate",
+        "price": "820,000₫",
+        "prediscount-price": "1,022,000₫",
+        "discount": "-20%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_322505ea851448d2bfcd9d1b6946fb70_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_a01146ed55684e45a86434adb7938dad_medium.jpg",
+        "name": "Rustic Wooden Coat",
+        "link": "https://ega-cake.myharavan.com/products/rustic-wooden-coat",
+        "price": "1,560,000₫",
+        "prediscount-price": "1,720,000₫",
+        "discount": "-9%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_6a1075b16cf34b57a245c0a98794b764_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_d47e271880cf4158b871f87dd98aead6_medium.jpg",
+        "name": "Fantastic Plastic Watch",
+        "link": "https://ega-cake.myharavan.com/products/fantastic-plastic-watch",
+        "price": "460,000₫",
+        "prediscount-price": null,
+        "discount": null,
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_8915129614354c51b8fa9a13e13dcb71_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_d811fb15e29142a2a876f1d1c8b106ab_medium.jpg",
+        "name": "Incredible Cotton Shirt",
+        "link": "https://ega-cake.myharavan.com/products/incredible-cotton-shirt",
+        "price": "460,000₫",
+        "prediscount-price": "720,000₫",
+        "discount": "-36%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_031c774fcf3c43b0a44f547244a8d1be_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_f52e8a04390d469c8b4130b9f55699f6_medium.jpg",
+        "name": "Lightweight Wool Keyboard",
+        "link": "https://ega-cake.myharavan.com/products/lightweight-wool-keyboard",
+        "price": "930,000₫",
+        "prediscount-price": "1,020,000₫",
+        "discount": "-9%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_1513e9eeec314682947f40ab9a17faa5_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_4ecf82faffdb4b3ea7d23bfac36f5ce0_medium.jpg",
+        "name": "Bánh bông lan chocolate",
+        "link": "https://ega-cake.myharavan.com/products/banh-bong-lan-chocolate",
+        "price": "360,000₫",
+        "prediscount-price": "400,000₫",
+        "discount": "-10%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_789970f229d1473ebb29235a56ba1fe6_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_893c9bd28fdb462ab91444ce5ea7cd62_medium.jpg",
+        "name": "Bánh flan socola",
+        "link": "https://ega-cake.myharavan.com/products/banh-flan-socola",
+        "price": null,
+        "prediscount-price": null,
+        "discount": null,
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_0c1f5323d3744472974bdacf5aa0524e_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_0b5028015d9247d09f864db408d57d03_medium.jpg",
+        "name": "Bánh mousse socola",
+        "link": "https://ega-cake.myharavan.com/products/banh-mousse-socola-dau-tay",
+        "price": "50,000₫",
+        "prediscount-price": "60,000₫",
+        "discount": "-17%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_245c9350e69f400c959269026ec4fe07_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_c3e731934b9c4fd899c998700b7069ab_medium.jpg",
+        "name": "Bánh quy socola",
+        "link": "https://ega-cake.myharavan.com/products/banh-quy-socola",
+        "price": "100,000₫",
+        "prediscount-price": "120,000₫",
+        "discount": "-17%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_a558a0ec167e444c98fe0cd979c1f4c0_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_50712b7fd6e949c09fdb97851bf5cd86_medium.jpg",
+        "name": "Bánh socola núi lửa",
+        "link": "https://ega-cake.myharavan.com/products/banh-socola-nui-lua",
+        "price": "200,000₫",
+        "prediscount-price": "300,000₫",
+        "discount": "-33%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_6f9b5145e50f4cfeb0a9d8a578fe7e5f_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_12a353d8521849feab81f3c02894194d_medium.jpg",
+        "name": "Bánh nama socola trà xanh Matcha",
+        "link": "https://ega-cake.myharavan.com/products/banh-nama-socola-tra-xanh",
+        "price": "750,000₫",
+        "prediscount-price": "900,000₫",
+        "discount": "-17%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_aea508ccbff44889a484d92af17cb656_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_1beac6e57af947bb8b9acf836a446b1a_medium.jpg",
+        "name": "Tiramisu trang trí dâu",
+        "link": "https://ega-cake.myharavan.com/products/tiramisu-trang-tri-dau",
+        "price": "800,000₫",
+        "prediscount-price": "900,000₫",
+        "discount": "-11%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_cd181b70766b4f069e4120529e1af5a6_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_3f8bd3dceb254f51b46ffc0a2125abc6_medium.jpg",
+        "name": "Tiramisu trang trí trái cây",
+        "link": "https://ega-cake.myharavan.com/products/tiramisu-trang-tri-trai-cay",
+        "price": "900,000₫",
+        "prediscount-price": "1,400,000₫",
+        "discount": "-36%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_47cb6c3ee02041c4a43b3c1fb4546271_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_b878a021dd6344fe8b0ed79739e1ff6a_medium.jpg",
+        "name": "Bánh Tiramisu trái tim",
+        "link": "https://ega-cake.myharavan.com/products/banh-tiramisu-trai-tim",
+        "price": "400,000₫",
+        "prediscount-price": "800,000₫",
+        "discount": "-50%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_ee6bc1c03f6d48eaa127f50da39389c0_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_af3d5c19a24a453ba4bd194ea35b1ea8_medium.jpg",
+        "name": "Bánh kem Tiramisu Thôi Nôi",
+        "link": "https://ega-cake.myharavan.com/products/banh-kem-tiramisu-thoi-noi",
+        "price": "700,000₫",
+        "prediscount-price": "1,000,000₫",
+        "discount": "-30%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_4101005b80544da4a2fa213037e11ecc_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_7be929b587aa4fe28fba7f5bbd0f10c3_medium.jpg",
+        "name": "Bánh kem Tiramisu 2 vị",
+        "link": "https://ega-cake.myharavan.com/products/banh-kem-tiramisu-2-vi",
+        "price": "700,000₫",
+        "prediscount-price": "900,000₫",
+        "discount": "-22%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_3323a87a98e94b659ccb829c617b9daa_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_1b973190607b402e8664dae9d66c4ba1_medium.jpg",
+        "name": "Bánh Kem Tiramisu Bé Trai",
+        "link": "https://ega-cake.myharavan.com/products/banh-kem-tiramisu-be-trai",
+        "price": "700,000₫",
+        "prediscount-price": "900,000₫",
+        "discount": "-22%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_38eb750759c646b788af797648735677_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_ee660087d3fe47fc89d8e8d8401a1d1c_medium.jpg",
+        "name": "Bánh kem Tiramisu 5 vị",
+        "link": "https://ega-cake.myharavan.com/products/banh-kem-tiramisu-5-vi",
+        "price": "500,000₫",
+        "prediscount-price": "1,000,000₫",
+        "discount": "-50%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_54a3bbaf4e22484f87c74b9b54cc0e0b_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_f1ccb6032d2a4b0dadd137093e2b0787_medium.jpg",
+        "name": "Chocolate Fantasy Birthday Chocolate Cake",
+        "link": "https://ega-cake.myharavan.com/products/chocolate-fantasy-birthday-chocolate-cake",
+        "price": "380,000₫",
+        "prediscount-price": "420,000₫",
+        "discount": "-10%",
+        "soldout": false
+    },
+    {
+        "img": "https://product.hstatic.net/200000460475/product/upload_367c1570abb3447b9f0ec93fde650208_medium.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_2566d78b2bfd4a87add0a7e24f5f04f2_medium.jpg",
+        "name": "Happy Birthday Chocolate Cream Cake",
+        "link": "https://ega-cake.myharavan.com/products/happy-birthday-chocolate-cream-cake",
+        "price": null,
+        "prediscount-price": null,
+        "discount": null,
+        "soldout": false
+    }
+]
