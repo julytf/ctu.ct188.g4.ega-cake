@@ -3,6 +3,7 @@
     --secondary-color: #fabd0d;
     --header-background: #2d2d2d;
     --body-background: #F8F8F8;
+    --coupon-button-color: #cd3344;
     --footer-color: #333333;
 }
 
@@ -216,8 +217,9 @@ a {
 }
 
 .section__header {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+    padding: 10px;
 }
 
 /* site */
