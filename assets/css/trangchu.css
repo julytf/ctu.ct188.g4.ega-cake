@@ -6,7 +6,6 @@
 }
 
 .sidebar-menu__header {
-    color: white;
     background-color: var(--primary-color);
 }
 
@@ -210,4 +209,27 @@
 .coupon__info {
     font-size: 12px;
     color: #2E72D2;
+}
+.flashsale {
+    padding: 10px;
+}
+
+.flashsale__head__top {
+
+}
+
+.flashsale__title {
+
+}
+
+.flashsale__countdown {
+
+}
+
+.flashsale__news {
+
+}
+
+.product {
+    background-color: white;
 }
