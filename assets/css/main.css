@@ -170,7 +170,7 @@ a {
 .section {
     width: 100%;
     background-color: white;
-    border-radius: 6px;
+    border-radius: 8px;
     overflow: hidden;
     /* padding: 10px; */
     margin-top: 15px;
@@ -329,6 +329,19 @@ a {
     /* background-color: black; */
 }
 
+.banner {
+    /* width: 100%; */
+    transition: all 0.3s ease-in-out;
+}
+
+.banner:hover {
+    transform: scale(0.95);
+}
+
+.banner img {
+    width: 100%;
+}
+
 
 .top-footer {
     background-color: var(--footer-color);
@@ -422,7 +435,7 @@ a {
 }
 
 .products {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center ;
     flex-wrap: wrap;
@@ -439,8 +452,8 @@ a {
     justify-content: space-between;
     overflow: hidden;
     /* padding: 8px; */
-    margin: 8px -8px;
-    box-sizing: border-box;
+    margin: 4px;
+    /* box-sizing: border-box; */
 }
 
 .product__figure {
