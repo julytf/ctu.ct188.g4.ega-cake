@@ -18,8 +18,10 @@
     /* line-height: 20px; */
     border-bottom: 1px solid #00000022;
     /* box-shadow: 0 0 1px; */
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: 24px 1fr 15px;
+    grid-column-gap: 10px;
     padding: 8px 10px;
 }
 
@@ -27,21 +29,33 @@
     padding-right: 10px;
 }
 
-.sidebar-menu__footer {
+.sidebar-menu__foot {
     
 }
 
-.sidebar-menu__footer .sidebar-menu__item {
+.sidebar-menu__foot .sidebar-menu__item {
     border: none;
-    padding: 8px 10px 0;
+    /* padding: 8px 10px 0; */
 }
 
-.sidebar-menu__footer .sidebar-menu__item .icon {
+.sidebar-menu__foot .sidebar-menu__item img {
     width: 24px;
 }
 
-.sidebar-menu__footer .sidebar-menu__item .icon img {
+.sidebar-menu__foot .sidebar-menu__item .icon img {
     width: 100%;
+}
+
+.policises {
+
+}
+
+.shop-policises li {
+    display: grid;
+    align-items: center;
+    padding: 8px 10px;
+    grid-template-columns: 24px 1fr;
+    grid-gap: 10px;
 }
 
 .hotline {
@@ -211,7 +225,7 @@
     color: #2E72D2;
 }
 .flashsale {
-    padding: 10px;
+    /* padding: 4px; */
 }
 
 .flashsale__head__top {
@@ -230,6 +244,71 @@
 
 }
 
-.product {
+.flashsale__progressbar {
+    width: 100%;
+    color: white;
+    background-color: var(--process-background);
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.flashsale__progressbar-percent {
+    width: 97%;
+    height: 100%;
+    border-radius: 999px;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(90deg, var(--process-color1), var(--process-color2));
+    z-index: -1;
+}
+
+
+.collections {
     background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 15px;
+}
+
+.collection {
+    font-size: 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.collection__img {
+    width: 64px;
+    margin-bottom: 10px;
+}
+
+.collection__img:hover {
+    animation: tada 2s infinite;
+}
+
+@keyframes tada {
+0% { transform: scaleX(1);}
+10%, 20% { transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);}
+30%, 50%, 70%, 90% { transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);}
+40%, 60%, 80% { transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);}
+100% { transform: scaleX(1);}   
+}
+
+.valentine {
+    /* padding: 4px; */
+}
+
+.show_all_btn {
+    border: 1px solid;
+    border-radius: 999px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
 }
