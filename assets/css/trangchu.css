@@ -47,7 +47,10 @@
 }
 
 .policises {
-
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 8px;
 }
 
 .shop-policises li {
@@ -303,7 +306,12 @@
 }
 
 .valentine {
+    background-color: white;
     /* padding: 4px; */
+}
+
+.sweet-cake {
+    background-color: white;
 }
 
 .show_all_btn {

@@ -78,6 +78,14 @@ a {
     margin-right: 25px;
 }
 
+.ml-2 {
+    margin-left: 2px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
 .my-8 {
     margin-top: 8px;
     margin-bottom: 8px;
@@ -169,7 +177,7 @@ a {
 
 .section {
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
     border-radius: 8px;
     overflow: hidden;
     /* padding: 10px; */
@@ -325,21 +333,25 @@ a {
 }
 
 .body {
+    font-size: 14px;
     background-color: var(--body-background);
     /* background-color: black; */
 }
 
 .banner {
     /* width: 100%; */
+    display: flex;
+    align-items: center;
     transition: all 0.3s ease-in-out;
+    /* object-fit: cover; */
 }
 
-.banner:hover {
+.banner:hover img {
     transform: scale(0.95);
 }
 
 .banner img {
-    width: 100%;
+    /* width: 100%; */
 }
 
 
