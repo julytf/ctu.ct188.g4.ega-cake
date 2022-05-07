@@ -189,6 +189,8 @@ a {
     color: white;
     font-size: 18px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
     padding: 10px;
 }
 

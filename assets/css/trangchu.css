@@ -158,19 +158,21 @@
     top: 0;
     transition: 0.3s;
     z-index: 1;
-    left: -100%;
-    animation: to-right 0.3s;
+    /* left: -100%; */
+    /* animation: to-right 0.3s; */
+    opacity: 0;
 }
 
 .slider__radio:checked + .slider__img {
-    animation: none;
-    left: 0;
+    /* animation: none; */
+    /* left: 0; */
+    opacity: 1;
 } 
 
-@keyframes to-right {
+/* @keyframes to-right {
     from { left: 0;}
     to { left: 100%;}
-}
+} */
 
 .coupons {
     width: 100%;
