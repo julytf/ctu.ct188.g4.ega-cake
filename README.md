@@ -4,7 +4,7 @@
  ## Participant
  * Lam Chan Vu (leader)
  * Le Thanh Hung
- * Le Chi Linh
+ * ~~Le Chi Linh~~
 
 
 __Assignment__: [here](https://docs.google.com/document/d/1C701cqNiHubA1yAw2FGpKGZStVVStzcwnDOUVTQPX2E/edit)
