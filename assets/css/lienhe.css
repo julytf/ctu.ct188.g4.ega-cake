@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #a50a06;
+    --secondary-color: #fabd0d;
+    --header-background: #2d2d2d;
+    --body-background: #F8F8F8;
+    --footer-color: #333333;
+}
+
+.box-contact {
+    display: flex;
+}
+.box-contact .contact-form {
+    flex: 0 0 50%;
+    margin-right: 20px;
+}
+
+.box-contact .contact-map {
+    flex: 0 0 50%;
+}
+
+.box-contact .contact-map iframe {
+    height: 100%;
+}
+
+.main .container {
+    max-width: 1200px;
+    padding: 16px 10px;
+    margin: auto;
+    align-items: center;
+}
+.box-contact .contact-form h1 {
+    margin-bottom: 16px;
+    padding: 10px 0px;
+}
+
+ul li {
+    list-style-type: none;
+    padding-bottom: 12px;
+}
+
+.listcontact li p {
+    display: inline-block;
+}
+.listcontact li i {
+    color: var(--primary-color);
+}
+
+.listcontact li span:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.form-complaint {
+    border-top: 1px solid rgb(138, 138, 138);
+}
+
+.form-complaint h2 {
+    margin-bottom: 16px;
+}
+
+#form-contact .form-row {
+    margin-bottom: 16px;
+}
+
+#form-contact .form-row input {
+    width: 100%;
+    line-height: 24px;
+    padding:8px 0;
+    border-radius: 5px solid rgb(138, 138, 138);
+}
+
+#form-contact .form-content input {
+    height: 100px;
+}
+
+#form-contact .btn-submit input:hover {
+    background-color: var(--secondary-color);
+}
+
+

@@ -5,14 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>EGA Cake</title>
-        <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <link
+            rel="icon"
+            href="assets/images/favicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
         <link rel="stylesheet" href="assets/css/grid.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/giohang.css" />
+        <link rel="stylesheet" href="assets/css/xuathoadondientu.css"/>
         <script src="assets/js/main.js" defer></script>
-        <script src="api/product/index.js" defer></script>
-        <script src="assets/js/sanpham.js" defer></script>
     </head>
 
     <body>
@@ -100,82 +105,79 @@
                     </div>
                 </div>
             </div>
-        </header>
-        <nav class="nav">
-            <div class="grid wide">
-                <div class="row">
-                    <ul class="nav__list col l-11 list-unstyled">
-                        <li class="nav__list-item mr-25">
-                            <a href="trangchu.html">Trang chủ</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="#">Giới thiệu</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="sanpham.html">Quà tặng 08/03</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="sanpham.html">Chương trình khuyến mãi</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="#">Bánh ngon mỗi ngày</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="#">Công thức làm bánh</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="#">Chuyên mục làm bánh</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="lienhe.html">Liên hệ</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="#">Góp ý / Khiếu nại</a>
-                        </li>
-                        <li class="nav__list-item mr-25">
-                            <a href="timkiem.html">Tìm kiếm</a>
-                        </li>
-                    </ul>
-                    <div class="nav__btn col l-1">
-                        <label class="nav__btn-label">
-                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio1"  checked/>
-                            <i class="fa-solid fa-angle-left nav__btn-icon"></i>
-                        </label>
-                        <label class="nav__btn-label">
-                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio2"/>
-                            <i class="fa-solid fa-angle-right nav__btn-icon"></i>
-                        </label>
-                    </div>
-                </div>
+</header>
+<nav class="nav">
+    <div class="grid wide">
+        <div class="row">
+            <ul class="nav__list col l-11 list-unstyled">
+                <li class="nav__list-item mr-25">
+                    <a href="trangchu.html">Trang chủ</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="sanpham.html">Quà tặng 08/03</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="sanpham.html">Chương trình khuyến mãi</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="#">Bánh ngon mỗi ngày</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="#">Công thức làm bánh</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="#">Chuyên mục làm bánh</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="lienhe.html">Liên hệ</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="#">Góp ý / Khiếu nại</a>
+                </li>
+                <li class="nav__list-item mr-25">
+                    <a href="timkiem.html">Tìm kiếm</a>
+                </li>
+            </ul>
+            <div class="nav__btn col l-1">
+                <label class="nav__btn-label">
+                    <input class="nav-radio" type="radio" name="navRadio" id="navRadio1"  checked/>
+                    <i class="fa-solid fa-angle-left nav__btn-icon"></i>
+                </label>
+                <label class="nav__btn-label">
+                    <input class="nav-radio" type="radio" name="navRadio" id="navRadio2"/>
+                    <i class="fa-solid fa-angle-right nav__btn-icon"></i>
+                </label>
             </div>
-        </nav>
-        <!-- main -->
-        <main class="main">
-            <div class="content">
-                <div class="container">
-                    <div class="content-title plr-10">
-                        <div class="content-title-child ptb-4">
-                            <p>Trang chủ / Giỏ Hàng (0)</p>
-                        </div>
-                    </div>
-                    <div class="cart-empty p12-20 mb-16">
-                        <div class="img-cart-empty mb-20">
-                            <img src="assets/images/cart_empty.png" alt="" />
-                        </div>
-                        <h3 class="empty mb-8">Hỏng có gì trong giỏ hết</h3>
-                        <p class="mb-16">Về cửa hàng để chọn mua sản phẩm bạn nhé!!</p>
-                        <a href="/" title="Mua sắm ngay" class="btn btn-empty">Mua sắm ngay</a>
-                    </div>
-                    <div class="product">
-                        <div class="title-product">
-                            <h2 class="product-stick">Sản phẩm thường mua cùng</h2>
-                        </div>
-                        
-                        <div class="section__body grip products" data-quantity="8">
-                            <div class="row no-gutters">
-                            
-                            </div>
-                        </div>
+        </div>
+    </div>
+</nav>
+<!-- main -->
+<main class="main">
+    <div class="container">
+        <div class="text-content">
+            <h1>Trang chủ</h1>
+        </div>
+        <div class="bill-online">
+            <h1>Xuất hóa đơn điện tử</h1>
+            <ol class="billonline">
+                <li><h3>Hóa đơn điện tử là gì?</h3>
+                    <ul>
+                        <p>Theo nội dung được ghi trong Thông tư 32/2011- TTBTC công bố <span>ngày 14/03/2011</span></p>
+                               <li><p>- Hoá đơn điện tử (<span>HDDT</span>) là tập hợp các thông điệp dữ liệu điện tử về bán hàng hoá hoặc cung ứng dịch vụ được khởi tạo, lập, gửi, nhận, lưu trữ và quản lý bằng <span>phương tiện điện tử.</span></p></li>
+                <li><p>- HDDT có thể chuyển đổi thành hóa đơn giấy trong nhu cầu lưu thông hàng hóa, quản lý hóa đơn của người bán hoặc người mua.</p></li>
+                               <li><p>- HDDT là <span>1 trong 3 hình thức</span> Hóa đơn (Hóa đơn tự in; Hóa đơn đặt in; Hóa đơn điện tử). Thay vì Hóa đơn tạo lập trên giấy, HDDT được tạo lập & lưu trữ trên thiết bị điện tử.</p></li>
+                           </ul> 
+                        </li>
+                        <li><h3>Khi bạn muốn xuất hoá đơn điện tử cho đơn hàng của mình</h3>
+                            <ul>
+                                <li><p>- Cách 1: Ghi chú thông tin xuất VAT khi thanh toán đơn hàng của bạn. Ega-Cake sẽ xuất hoá đơn điện tử và gửi về email cho bạn</p></li>
+                                <li><p>- Cách 2: Nếu bạn chưa thực hiện cách 1 thì bạn hãy gọi điện trực tiếp tới hotline 099999999 hoặc liên hệ email support@egany.com để được hỗ trợ xuất hoá đơn cho đơn hàng của mình.</p></li>
+                            </ul>
+                        </li>
+                    </ol>
                     </div>
                 </div>
             </div>
@@ -187,19 +189,39 @@
                     <div class="col l-5">
                         <ul class="top-footer__social list-unstyled">
                             <li>
-                                <img class="mr-15" src="assets/images/facebook.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/facebook.png"
+                                    alt=""
+                                />
                             </li>
                             <li>
-                                <img class="mr-15" src="assets/images/instagram.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/instagram.png"
+                                    alt=""
+                                />
                             </li>
                             <li>
-                                <img class="mr-15" src="assets/images/youtube.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/youtube.png"
+                                    alt=""
+                                />
                             </li>
                             <li>
-                                <img class="mr-15" src="assets/images/tiktok.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/tiktok.png"
+                                    alt=""
+                                />
                             </li>
                             <li>
-                                <img class="mr-15" src="assets/images/zalo.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/zalo.png"
+                                    alt=""
+                                />
                             </li>
                         </ul>
                     </div>
@@ -207,17 +229,31 @@
                         <div class="row">
                             <div class="col l-1">
                                 <i>
-                                    <img src="assets/images/email-icon.svg" alt="" />
+                                    <img
+                                        src="assets/images/email-icon.svg"
+                                        alt=""
+                                    />
                                 </i>
                             </div>
                             <div class="col l-5 color-white">
-                                <span>Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký ngay.</span>
+                                <span
+                                    >Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký
+                                    ngay.</span
+                                >
                             </div>
                             <div class="col l-6">
                                 <form class="single-field-form" action="">
-                                    <input type="email" name="email" placeholder="Thả email nhận ngay ưu đãi..." />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Thả email nhận ngay ưu đãi..."
+                                    />
                                     <button>
-                                        <span class="px-10 py-20" style="display: inline-block">Đăng ký</span>
+                                        <span
+                                            class="px-10 py-20"
+                                            style="display: inline-block"
+                                            >Đăng ký</span
+                                        >
                                     </button>
                                 </form>
                             </div>
@@ -230,25 +266,43 @@
             <div class="grid wide">
                 <div class="row my-8 pt-40">
                     <div class="col l-3">
-                        <img class="footer-logo" src="assets/images/logo-footer.png" alt="" />
+                        <img
+                            class="footer-logo"
+                            src="assets/images/logo-footer.png"
+                            alt=""
+                        />
                         <ul class="list-menu">
                             <li>
                                 <i class="fa-solid fa-location-dot icon"></i>
                                 <strong>Địa chỉ: </strong>
-                                <span>150/8 Nguyễn Duy Cung- Phường 12- Quận Gò vấp- TP.HCM</span>
+                                <span
+                                    >150/8 Nguyễn Duy Cung- Phường 12- Quận Gò
+                                    vấp- TP.HCM</span
+                                >
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen icon"></i>
                                 <strong>Số điện thoại: </strong>
-                                <a class="link-h--pri" href="tel:19003333">19003333</a>
+                                <a class="link-h--pri" href="tel:19003333"
+                                    >19003333</a
+                                >
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope icon"></i>
                                 <strong>Email: </strong>
-                                <a class="link-h--pri" href="mailto:support@egany.com">support@egany.com</a>
+                                <a
+                                    class="link-h--pri"
+                                    href="mailto:support@egany.com"
+                                    >support@egany.com</a
+                                >
                             </li>
                         </ul>
-                        <img class="logo-bct p-6" src="assets/images/logo_bct.png" alt="" width="104px" />
+                        <img
+                            class="logo-bct p-6"
+                            src="assets/images/logo_bct.png"
+                            alt=""
+                            width="104px"
+                        />
                     </div>
                     <div class="col l-3">
                         <h4 class="title-menu">Hỗ trợ khách hàng</h4>
@@ -257,13 +311,19 @@
                                 <a class="link-h--pri" href="#">Về chúng tôi</a>
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Hệ thống cửa hàng</a>
+                                <a class="link-h--pri" href="#"
+                                    >Hệ thống cửa hàng</a
+                                >
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Gọi điện đặt hàng</a>
+                                <a class="link-h--pri" href="#"
+                                    >Gọi điện đặt hàng</a
+                                >
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Xuất hóa đơn điện tử</a>
+                                <a class="link-h--pri" href="#"
+                                    >Xuất hóa đơn điện tử</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -271,13 +331,19 @@
                         <h4 class="title-menu">Chính sách</h4>
                         <ul class="list-menu">
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách bán hàng</a>
+                                <a class="link-h--pri" href="#"
+                                    >Chính sách bán hàng</a
+                                >
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách đổi trả</a>
+                                <a class="link-h--pri" href="#"
+                                    >Chính sách đổi trả</a
+                                >
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách giao hàng</a>
+                                <a class="link-h--pri" href="#"
+                                    >Chính sách giao hàng</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -287,21 +353,33 @@
                             <li>
                                 <a href="#"
                                     >Gọi mua hàng:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a
+                                        class="link--blue bold"
+                                        href="tel:19003333"
+                                        >19003333</a
+                                    >
                                     (8h-20h)</a
                                 >
                             </li>
                             <li>
                                 <a href="#"
                                     >Gọi bảo hành:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a
+                                        class="link--blue bold"
+                                        href="tel:19003333"
+                                        >19003333</a
+                                    >
                                     (8h-20h)</a
                                 >
                             </li>
                             <li>
                                 <a href="#"
                                     >Gọi khiếu nại:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a
+                                        class="link--blue bold"
+                                        href="tel:19003333"
+                                        >19003333</a
+                                    >
                                     (8h-20h)</a
                                 >
                             </li>

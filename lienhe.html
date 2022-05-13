@@ -9,10 +9,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <link rel="stylesheet" href="assets/css/grid.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/giohang.css" />
+        <link rel="stylesheet" href="assets/css/lienhe.css" />
         <script src="assets/js/main.js" defer></script>
-        <script src="api/product/index.js" defer></script>
-        <script src="assets/js/sanpham.js" defer></script>
     </head>
 
     <body>
@@ -151,31 +149,58 @@
         </nav>
         <!-- main -->
         <main class="main">
-            <div class="content">
-                <div class="container">
-                    <div class="content-title plr-10">
-                        <div class="content-title-child ptb-4">
-                            <p>Trang chủ / Giỏ Hàng (0)</p>
+            <div class="container">
+                <div class="nav-content">
+                    <a href="trangchu.html">Trang chủ</a>
+                </div>
+                <div class="box-contact">
+                    <div class="contact-form">
+                        <h1>Công Ty EGANY</h1>
+                        <ul class="listcontact">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Địa chỉ: 150/8 Nguyễn Duy Cung- Phường 12- Quận Gò vấp- TP.HCM</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <p>Số điện thoại: <span>19003333</span></p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>Email: <span>support@egany.com</span></p>
+                            </li>
+                        </ul>
+                        <div class="form-complaint">
+                            <h2>Liên hệ với chúng tôi</h2>
+                            <form id="form-contact" action="/noexistURL">
+                                <div class="form-row">
+                                    <input type="text" name="yourname" id="yourname" placeholder="Họ Tên*" />
+                                </div>
+                                <div class="form-row">
+                                    <input type="mail" name="youremail" id="youremail" placeholder="Email*" />
+                                </div>
+                                <div class="form-row">
+                                    <input type="text" name="yourphone" id="yourphone" placeholder="Số điện thoại*" />
+                                </div>
+                                <div class="form-row form-content">
+                                    <input type="text" name="purport" id="purport" placeholder="Nhập nội dung*" />
+                                </div>
+                                <div class="form-row btn-submit">
+                                    <input type="submit" value="Gửi liên hệ của bạn" />
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="cart-empty p12-20 mb-16">
-                        <div class="img-cart-empty mb-20">
-                            <img src="assets/images/cart_empty.png" alt="" />
-                        </div>
-                        <h3 class="empty mb-8">Hỏng có gì trong giỏ hết</h3>
-                        <p class="mb-16">Về cửa hàng để chọn mua sản phẩm bạn nhé!!</p>
-                        <a href="/" title="Mua sắm ngay" class="btn btn-empty">Mua sắm ngay</a>
-                    </div>
-                    <div class="product">
-                        <div class="title-product">
-                            <h2 class="product-stick">Sản phẩm thường mua cùng</h2>
-                        </div>
-                        
-                        <div class="section__body grip products" data-quantity="8">
-                            <div class="row no-gutters">
-                            
-                            </div>
-                        </div>
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2330.033166839554!2d106.64152151775407!3d10.839366475990516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529a928fd9ee7%3A0x9212ec848dbfcbb6!2sEGANY%20Tech!5e0!3m2!1svi!2s!4v1652284025334!5m2!1svi!2s"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #a50a06;
+    --secondary-color: #fabd0d;
+    --header-background: #2d2d2d;
+    --body-background: #F8F8F8;
+    --footer-color: #333333;
+}
+
+.callorder {
+    padding: 16px 0;
+}
+
+.main .container {
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.callorder-child1 h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.callorder-child1 .topchild1 {
+    margin-bottom: 16px;
+}
+
+.callorder p {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+
+.callorder-child1 ol {
+    padding-inline-start: 50px;
+    margin-bottom: 16px;
+}
+/* .callorder-child1 .ol li {
+    margin-bottom: 10px;
+} */
+
+.callorder-child2 h2 {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.callorder-child2 p {
+    margin-bottom: 16px;
+    line-height: 25px;
+}
+
+.callorder-child3 h2 {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.callorder-child3 p {
+    margin-bottom: 16px;
+}
+.callorder-child3 span {
+    font-weight: bolder;
+}

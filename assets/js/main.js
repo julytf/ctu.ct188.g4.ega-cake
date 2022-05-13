@@ -1,37 +1,33 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
+// remove btn
 Object.values($$('.close')).forEach((entity, index)=>{
     entity.onclick = (e)=>{
         e.target.parentElement.remove()
     }
 })
 
-var sliderRadios = $$('.slider__radio')
+// nav btn
+var navRadio1 = $('#navRadio1') 
+var navRadio2 = $('#navRadio2') 
+var navList = $('.nav__list') 
 
-var prevSlide = $('.slider__prev')
-var nextSlide = $('.slider__next')
-
-
-autoSlider(sliderRadios, 5*1000)
-
-prevSlide.onclick = () => prevRadio(sliderRadios)
-nextSlide.onclick = () => nextRadio(sliderRadios)
-
-function prevRadio(radios) {
-    let current = Object.values(radios).findIndex(radio=>radio.checked)
-    let next = (current + radios.length - 1) % radios.length
-    radios[next].checked = true
+navRadio1.onclick = () => {
+    navList.style.marginTop = "0"
 }
 
-function nextRadio(radios) {
-    let current = Object.values(radios).findIndex(radio=>radio.checked)
-    let next = (current + 1) % radios.length
-    radios[next].checked = true
+navRadio2.onclick = () => {
+    navList.style.marginTop = "-45px"
 }
 
-function autoSlider(radios, delay) {
-    setInterval(()=>{
-        nextRadio(radios)
-    }, delay)
+// searchform validation
+Object.values($$('.search-form')).forEach((form, index)=>{
+    form.onsubmit = (e)=>{
+        console.log(form.querySelector('input').value)
+        if (form.querySelector('input').value.length == 0) 
+            return false;
+    }
 }
+)
+

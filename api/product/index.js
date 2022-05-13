@@ -1,5 +1,6 @@
-[
+const productList = [
     {
+        "id": "sp001",
         "img": "assets/images/products/banh-cupcake-glory.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_de77b486378e498380cd13cfd3aaf031_medium.jpg",
         "name": "Bánh cupcake glory",
@@ -10,16 +11,7 @@
         "soldout": true
     },
     {
-        "img": "assets/images/products/banh-chocolate-raspberry-cupcakes.jpg",
-        "img2": "https://product.hstatic.net/200000460475/product/upload_2809da0933f143589f1f70bc437c3a5b_medium.jpg",
-        "name": "Bánh chocolate raspberry cupcakes",
-        "link": "https://ega-cake.myharavan.com/products/banh-chocolate-raspberry-cupcakes",
-        "price": "130000",
-        "prediscount-price": "150000",
-        "discount": "-13%",
-        "soldout": false
-    },
-    {
+        "id": "sp002",
         "img": "assets/images/products/banh-cupcake-queen.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_c2ad10b145714d5f985a830c75442278_medium.jpg",
         "name": "Bánh cupcake queen",
@@ -30,16 +22,7 @@
         "soldout": false
     },
     {
-        "img": "assets/images/products/banh-pumpkin-spice-cupcakes.jpg",
-        "img2": "https://product.hstatic.net/200000460475/product/upload_dfa7f157e318423294c3c24836ff62e3_medium.jpg",
-        "name": "Bánh pumpkin spice cupcakes",
-        "link": "https://ega-cake.myharavan.com/products/banh-pumpkin-spice-cupcakes",
-        "price": "109000",
-        "prediscount-price": null,
-        "discount": null,
-        "soldout": false
-    },
-    {
+        "id": "sp003",
         "img": "assets/images/products/banh-blue-sky-cupcakes.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_2c02919070e24a6c93de51c13435c9f3_medium.jpg",
         "name": "Bánh blue sky cupcakes",
@@ -50,6 +33,7 @@
         "soldout": false
     },
     {
+        "id": "sp004",
         "img": "assets/images/products/banh-red-sugar-flower-cupcakes.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_70b053e760ae484dbbd09be8200114d7_medium.jpg",
         "name": "Bánh red sugar flower cupcakes",
@@ -60,6 +44,7 @@
         "soldout": false
     },
     {
+        "id": "sp005",
         "img": "assets/images/products/banh-sangria-cupcakes.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_a4b3b2123c884c128f4a1c360b8cb1ba_medium.jpg",
         "name": "Bánh sangria cupcakes",
@@ -70,6 +55,7 @@
         "soldout": false
     },
     {
+        "id": "sp006",
         "img": "assets/images/products/banh-cuon-kem-chocolate.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_2696d70f0cd342f380494611bf1dee31_medium.jpg",
         "name": "Bánh cuộn kem chocolate",
@@ -80,6 +66,7 @@
         "soldout": false
     },
     {
+        "id": "sp007",
         "img": "assets/images/products/banh-sung-bo-phu-chocolate.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_7e59ba3694c84cc2b560cec7e39e0ff0_medium.jpg",
         "name": "Bánh sừng bò phủ chocolate",
@@ -90,6 +77,7 @@
         "soldout": false
     },
     {
+        "id": "sp008",
         "img": "assets/images/products/banh-to-ong-kem-kem-vani.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_13f8049fdaa44460bc1bcd533a9c36e2_medium.jpg",
         "name": "Bánh tổ ong kèm kem vani",
@@ -100,6 +88,7 @@
         "soldout": false
     },
     {
+        "id": "sp009",
         "img": "assets/images/products/banh-mat-dau-tay.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_55afb4b6c8994c02b3148fd402f4ce81_medium.jpg",
         "name": "Bánh mật dâu tây",
@@ -110,6 +99,7 @@
         "soldout": false
     },
     {
+        "id": "sp010",
         "img": "assets/images/products/heavy-duty-paper-car.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_e42779a98de9476595277b35f7a8c8c5_medium.jpg",
         "name": "Heavy Duty Paper Car",
@@ -120,6 +110,7 @@
         "soldout": false
     },
     {
+        "id": "sp011",
         "img": "assets/images/products/mediocre-granite-plate.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_bd2d9aa2ce884215adefe43321e824ec_medium.jpg",
         "name": "Mediocre Granite Plate",
@@ -130,6 +121,7 @@
         "soldout": false
     },
     {
+        "id": "sp012",
         "img": "assets/images/products/rustic-wooden-coat.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_a01146ed55684e45a86434adb7938dad_medium.jpg",
         "name": "Rustic Wooden Coat",
@@ -140,6 +132,7 @@
         "soldout": false
     },
     {
+        "id": "sp013",
         "img": "assets/images/products/fantastic-plastic-watch.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_d47e271880cf4158b871f87dd98aead6_medium.jpg",
         "name": "Fantastic Plastic Watch",
@@ -150,6 +143,7 @@
         "soldout": false
     },
     {
+        "id": "sp014",
         "img": "assets/images/products/incredible-cotton-shirt.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_d811fb15e29142a2a876f1d1c8b106ab_medium.jpg",
         "name": "Incredible Cotton Shirt",
@@ -160,6 +154,7 @@
         "soldout": false
     },
     {
+        "id": "sp015",
         "img": "assets/images/products/lightweight-wool-keyboard.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_f52e8a04390d469c8b4130b9f55699f6_medium.jpg",
         "name": "Lightweight Wool Keyboard",
@@ -170,6 +165,18 @@
         "soldout": false
     },
     {
+        "id": "sp016",
+        "img": "assets/images/products/banh-chocolate-raspberry-cupcakes.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_2809da0933f143589f1f70bc437c3a5b_medium.jpg",
+        "name": "Bánh chocolate raspberry cupcakes",
+        "link": "https://ega-cake.myharavan.com/products/banh-chocolate-raspberry-cupcakes",
+        "price": "130000",
+        "prediscount-price": "150000",
+        "discount": "-13%",
+        "soldout": false
+    },
+    {
+        "id": "sp017",
         "img": "assets/images/products/banh-bong-lan-chocolate.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_4ecf82faffdb4b3ea7d23bfac36f5ce0_medium.jpg",
         "name": "Bánh bông lan chocolate",
@@ -180,6 +187,7 @@
         "soldout": false
     },
     {
+        "id": "sp018",
         "img": "assets/images/products/banh-mousse-socola-dau-tay.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_0b5028015d9247d09f864db408d57d03_medium.jpg",
         "name": "Bánh mousse socola",
@@ -190,6 +198,7 @@
         "soldout": false
     },
     {
+        "id": "sp019",
         "img": "assets/images/products/banh-quy-socola.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_c3e731934b9c4fd899c998700b7069ab_medium.jpg",
         "name": "Bánh quy socola",
@@ -200,6 +209,7 @@
         "soldout": false
     },
     {
+        "id": "sp020",
         "img": "assets/images/products/banh-socola-nui-lua.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_50712b7fd6e949c09fdb97851bf5cd86_medium.jpg",
         "name": "Bánh socola núi lửa",
@@ -210,6 +220,7 @@
         "soldout": false
     },
     {
+        "id": "sp021",
         "img": "assets/images/products/banh-nama-socola-tra-xanh.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_12a353d8521849feab81f3c02894194d_medium.jpg",
         "name": "Bánh nama socola trà xanh Matcha",
@@ -220,6 +231,7 @@
         "soldout": false
     },
     {
+        "id": "sp022",
         "img": "assets/images/products/tiramisu-trang-tri-dau.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_1beac6e57af947bb8b9acf836a446b1a_medium.jpg",
         "name": "Tiramisu trang trí dâu",
@@ -230,6 +242,7 @@
         "soldout": false
     },
     {
+        "id": "sp023",
         "img": "assets/images/products/tiramisu-trang-tri-trai-cay.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_3f8bd3dceb254f51b46ffc0a2125abc6_medium.jpg",
         "name": "Tiramisu trang trí trái cây",
@@ -240,6 +253,7 @@
         "soldout": false
     },
     {
+        "id": "sp024",
         "img": "assets/images/products/banh-tiramisu-trai-tim.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_b878a021dd6344fe8b0ed79739e1ff6a_medium.jpg",
         "name": "Bánh Tiramisu trái tim",
@@ -250,6 +264,7 @@
         "soldout": false
     },
     {
+        "id": "sp025",
         "img": "assets/images/products/banh-kem-tiramisu-thoi-noi.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_af3d5c19a24a453ba4bd194ea35b1ea8_medium.jpg",
         "name": "Bánh kem Tiramisu Thôi Nôi",
@@ -260,6 +275,7 @@
         "soldout": false
     },
     {
+        "id": "sp026",
         "img": "assets/images/products/banh-kem-tiramisu-2-vi.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_7be929b587aa4fe28fba7f5bbd0f10c3_medium.jpg",
         "name": "Bánh kem Tiramisu 2 vị",
@@ -270,6 +286,7 @@
         "soldout": false
     },
     {
+        "id": "sp027",
         "img": "assets/images/products/banh-kem-tiramisu-be-trai.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_1b973190607b402e8664dae9d66c4ba1_medium.jpg",
         "name": "Bánh Kem Tiramisu Bé Trai",
@@ -280,6 +297,7 @@
         "soldout": false
     },
     {
+        "id": "sp028",
         "img": "assets/images/products/banh-kem-tiramisu-5-vi.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_ee660087d3fe47fc89d8e8d8401a1d1c_medium.jpg",
         "name": "Bánh kem Tiramisu 5 vị",
@@ -290,21 +308,23 @@
         "soldout": false
     },
     {
-        "img": "assets/images/products/chocolate-fantasy-birthday-chocolate-cake.jpg",
-        "img2": "https://product.hstatic.net/200000460475/product/upload_f1ccb6032d2a4b0dadd137093e2b0787_medium.jpg",
-        "name": "Chocolate Fantasy Birthday Chocolate Cake",
-        "link": "https://ega-cake.myharavan.com/products/chocolate-fantasy-birthday-chocolate-cake",
-        "price": "380000",
-        "prediscount-price": "420000",
-        "discount": "-10%",
+        "id": "sp029",
+        "img": "assets/images/products/banh-pumpkin-spice-cupcakes.jpg",
+        "img2": "https://product.hstatic.net/200000460475/product/upload_dfa7f157e318423294c3c24836ff62e3_medium.jpg",
+        "name": "Bánh pumpkin spice cupcakes",
+        "link": "https://ega-cake.myharavan.com/products/banh-pumpkin-spice-cupcakes",
+        "price": "109000",
+        "prediscount-price": null,
+        "discount": null,
         "soldout": false
     },
     {
+        "id": "sp030",
         "img": "assets/images/products/happy-birthday-chocolate-cream-cake.jpg",
         "img2": "https://product.hstatic.net/200000460475/product/upload_2566d78b2bfd4a87add0a7e24f5f04f2_medium.jpg",
         "name": "Happy Birthday Chocolate Cream Cake",
         "link": "https://ega-cake.myharavan.com/products/happy-birthday-chocolate-cream-cake",
-        "price": null,
+        "price": 200000,
         "prediscount-price": null,
         "discount": null,
         "soldout": false

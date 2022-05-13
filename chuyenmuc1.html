@@ -5,14 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>EGA Cake</title>
-        <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-        <link rel="stylesheet" href="assets/css/grid.css" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/giohang.css" />
-        <script src="assets/js/main.js" defer></script>
-        <script src="api/product/index.js" defer></script>
-        <script src="assets/js/sanpham.js" defer></script>
+        <link
+            rel="icon"
+            href="/assets/images/favicon.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="/assets/css/grid.css" />
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/congthuc.css"/>
+        <script src="/assets/js/main.js" defer></script>
     </head>
 
     <body>
@@ -89,7 +94,7 @@
                             </li>
                             <li class="header__menu-item">
                                 <a href="giohang.html">
-                                    <i style="position: relative;">
+                                    <i style="position: relative">
                                         <img class="header__menu-icon" src="assets/images/cart-icon.png" alt="" />
                                         <span class="cart-quantity"></span>
                                     </i>
@@ -121,10 +126,10 @@
                             <a href="#">Bánh ngon mỗi ngày</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Công thức làm bánh</a>
+                            <a href="congthuc.html">Công thức làm bánh</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Chuyên mục làm bánh</a>
+                            <a href="chuyenmuc.html">Chuyên mục làm bánh</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="lienhe.html">Liên hệ</a>
@@ -138,11 +143,11 @@
                     </ul>
                     <div class="nav__btn col l-1">
                         <label class="nav__btn-label">
-                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio1"  checked/>
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio1" checked />
                             <i class="fa-solid fa-angle-left nav__btn-icon"></i>
                         </label>
                         <label class="nav__btn-label">
-                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio2"/>
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio2" />
                             <i class="fa-solid fa-angle-right nav__btn-icon"></i>
                         </label>
                     </div>
@@ -151,31 +156,92 @@
         </nav>
         <!-- main -->
         <main class="main">
-            <div class="content">
-                <div class="container">
-                    <div class="content-title plr-10">
-                        <div class="content-title-child ptb-4">
-                            <p>Trang chủ / Giỏ Hàng (0)</p>
+            <div class="container">
+                <div class="text-content" style="margin-bottom: 20px;">
+                    <h1>Trang chủ</h1>
+                </div>
+                <div class="content-main">
+                    <div class="congthuc">
+                        <div class="text-congthuc">
+                            <h1>Công thức</h1>
                         </div>
-                    </div>
-                    <div class="cart-empty p12-20 mb-16">
-                        <div class="img-cart-empty mb-20">
-                            <img src="assets/images/cart_empty.png" alt="" />
-                        </div>
-                        <h3 class="empty mb-8">Hỏng có gì trong giỏ hết</h3>
-                        <p class="mb-16">Về cửa hàng để chọn mua sản phẩm bạn nhé!!</p>
-                        <a href="/" title="Mua sắm ngay" class="btn btn-empty">Mua sắm ngay</a>
-                    </div>
-                    <div class="product">
-                        <div class="title-product">
-                            <h2 class="product-stick">Sản phẩm thường mua cùng</h2>
-                        </div>
-                        
-                        <div class="section__body grip products" data-quantity="8">
-                            <div class="row no-gutters">
-                            
+                        <div class="list-congthuc">
+                            <div class="congthuc-items">
+                                <div class="img-items">
+                                    <img src="/assets/images/products/chuyenmuc7.jpg" alt="">
+                                </div>
+                                <h2>GỢI Ý 5 Ý TƯỞNG CONCEPT MỞ TIỆM BÁNH CỰC HÚT KHÁCH</h2>
+                                <h3>Support EGANY <span>Th 4 16/03/2022 </span></h3>
+                                <p>Khái niệm quán café, tiệm bánh concept đối với một số nước Châu Á như Thái Lan, Hàn Quốc hay Nhật Bản đều không còn quá...</p>
+                                <a href="congthuc-items1">Đọc tiếp</a>
+                            </div>
+                            <div class="congthuc-items">
+                                <div class="img-items">
+                                    <img src="/assets/images/products/chuyenmuc8.jpg" alt="">
+                                </div>
+                                <h2>KHỞI NGHIỆP THÀNH CÔNG TRONG NGÀNH BÁNH</h2>
+                                <h3>Support EGANY <span>Th 4 16/03/2022 </span></h3>
+                                <p>Bạn nghĩ một người làm bánh giỏi là đã có thể mở hiệu bánh? Đừng vội khẳng định điều này là đúng. Nếu muốn khởi nghiệp...</p>
+                                <a href="congthuc-items1">Đọc tiếp</a>
                             </div>
                         </div>
+                        <div class="move">
+                            <ul class="move-right">
+                                <li class="move1 pdr-10">
+                                    <div class="move-size">
+                                        <a href="chuyenmuc.html">1</a>
+                                    </div>
+                                </li>
+                                <li class="move2 pdr-10">
+                                    <div class="move-size move1-1">
+                                       <a href="">2</a>
+                                    </div>
+                                </li>
+                                <li class="arrow-right pdr-10">
+                                    <div class="move-size arrow-right1">
+                                        <a href="chuyenmuc.html"><i class="fa-solid fa-angle-right"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nav-content">
+                        <h1>Danh Mục</h1>
+                        <ul class="nav-right">
+                            <li><a href="trangchu.html">Trang chủ</a></li>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Quà tặng 08/03</a></li>
+                            <li><a href="">Chương trình khuyến mãi</a></li>
+                            <li><a href="">Bánh ngon mỗi ngày</a></li>
+                            <li><a href="">Công thức làm bánh</a></li>
+                            <li><a href="">Chuyên mục làm bánh</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                            <li><a href="">Góp ý/ khiếu nại</a></li>
+                            <li><a href="">Tìm kiếm</a></li>
+                        </ul>
+
+                        <ul class="news">
+                            <li>
+                                <img src="/assets/images/products/news1.jpg" alt="" >
+                                <p style="margin-top: 0;">Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ snacks"</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/news2.jpg" alt="">
+                                <p>Mê mẩn với cách làm bánh quy nam việt quất ngon ngất ngây</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/news3.jpg" alt="">
+                                <p>Những món quà Valentine tốt cho sức khỏe</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/news4.jpg" alt="">
+                                <p>Sử dụng lót bánh cupcake đúng cách, bạn đã biết chưa?</p>
+                            </li>
+                            <li>
+                                <img src="/assets/images/products/news5.jpg" alt="">
+                                <p>CÁC LOẠI BÁNH NGỌT NGON NHẤT THẾ GIỚI</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -187,19 +253,39 @@
                     <div class="col l-5">
                         <ul class="top-footer__social list-unstyled">
                             <li>
-                                <img class="mr-15" src="assets/images/facebook.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/facebook.png"
+                                    alt=""
+                                />
                             </li>
                             <li>
-                                <img class="mr-15" src="assets/images/instagram.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/instagram.png"
+                                    alt=""
+                                />
                             </li>
                             <li>
-                                <img class="mr-15" src="assets/images/youtube.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/youtube.png"
+                                    alt=""
+                                />
                             </li>
                             <li>
-                                <img class="mr-15" src="assets/images/tiktok.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/tiktok.png"
+                                    alt=""
+                                />
                             </li>
                             <li>
-                                <img class="mr-15" src="assets/images/zalo.png" alt="" />
+                                <img
+                                    class="mr-15"
+                                    src="assets/images/zalo.png"
+                                    alt=""
+                                />
                             </li>
                         </ul>
                     </div>
@@ -207,17 +293,31 @@
                         <div class="row">
                             <div class="col l-1">
                                 <i>
-                                    <img src="assets/images/email-icon.svg" alt="" />
+                                    <img
+                                        src="assets/images/email-icon.svg"
+                                        alt=""
+                                    />
                                 </i>
                             </div>
                             <div class="col l-5 color-white">
-                                <span>Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký ngay.</span>
+                                <span
+                                    >Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký
+                                    ngay.</span
+                                >
                             </div>
                             <div class="col l-6">
                                 <form class="single-field-form" action="">
-                                    <input type="email" name="email" placeholder="Thả email nhận ngay ưu đãi..." />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Thả email nhận ngay ưu đãi..."
+                                    />
                                     <button>
-                                        <span class="px-10 py-20" style="display: inline-block">Đăng ký</span>
+                                        <span
+                                            class="px-10 py-20"
+                                            style="display: inline-block"
+                                            >Đăng ký</span
+                                        >
                                     </button>
                                 </form>
                             </div>
@@ -230,25 +330,43 @@
             <div class="grid wide">
                 <div class="row my-8 pt-40">
                     <div class="col l-3">
-                        <img class="footer-logo" src="assets/images/logo-footer.png" alt="" />
+                        <img
+                            class="footer-logo"
+                            src="assets/images/logo-footer.png"
+                            alt=""
+                        />
                         <ul class="list-menu">
                             <li>
                                 <i class="fa-solid fa-location-dot icon"></i>
                                 <strong>Địa chỉ: </strong>
-                                <span>150/8 Nguyễn Duy Cung- Phường 12- Quận Gò vấp- TP.HCM</span>
+                                <span
+                                    >150/8 Nguyễn Duy Cung- Phường 12- Quận Gò
+                                    vấp- TP.HCM</span
+                                >
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen icon"></i>
                                 <strong>Số điện thoại: </strong>
-                                <a class="link-h--pri" href="tel:19003333">19003333</a>
+                                <a class="link-h--pri" href="tel:19003333"
+                                    >19003333</a
+                                >
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope icon"></i>
                                 <strong>Email: </strong>
-                                <a class="link-h--pri" href="mailto:support@egany.com">support@egany.com</a>
+                                <a
+                                    class="link-h--pri"
+                                    href="mailto:support@egany.com"
+                                    >support@egany.com</a
+                                >
                             </li>
                         </ul>
-                        <img class="logo-bct p-6" src="assets/images/logo_bct.png" alt="" width="104px" />
+                        <img
+                            class="logo-bct p-6"
+                            src="assets/images/logo_bct.png"
+                            alt=""
+                            width="104px"
+                        />
                     </div>
                     <div class="col l-3">
                         <h4 class="title-menu">Hỗ trợ khách hàng</h4>
@@ -257,13 +375,19 @@
                                 <a class="link-h--pri" href="#">Về chúng tôi</a>
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Hệ thống cửa hàng</a>
+                                <a class="link-h--pri" href="#"
+                                    >Hệ thống cửa hàng</a
+                                >
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Gọi điện đặt hàng</a>
+                                <a class="link-h--pri" href="#"
+                                    >Gọi điện đặt hàng</a
+                                >
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Xuất hóa đơn điện tử</a>
+                                <a class="link-h--pri" href="#"
+                                    >Xuất hóa đơn điện tử</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -271,13 +395,19 @@
                         <h4 class="title-menu">Chính sách</h4>
                         <ul class="list-menu">
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách bán hàng</a>
+                                <a class="link-h--pri" href="#"
+                                    >Chính sách bán hàng</a
+                                >
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách đổi trả</a>
+                                <a class="link-h--pri" href="#"
+                                    >Chính sách đổi trả</a
+                                >
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách giao hàng</a>
+                                <a class="link-h--pri" href="#"
+                                    >Chính sách giao hàng</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -287,21 +417,33 @@
                             <li>
                                 <a href="#"
                                     >Gọi mua hàng:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a
+                                        class="link--blue bold"
+                                        href="tel:19003333"
+                                        >19003333</a
+                                    >
                                     (8h-20h)</a
                                 >
                             </li>
                             <li>
                                 <a href="#"
                                     >Gọi bảo hành:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a
+                                        class="link--blue bold"
+                                        href="tel:19003333"
+                                        >19003333</a
+                                    >
                                     (8h-20h)</a
                                 >
                             </li>
                             <li>
                                 <a href="#"
                                     >Gọi khiếu nại:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a
+                                        class="link--blue bold"
+                                        href="tel:19003333"
+                                        >19003333</a
+                                    >
                                     (8h-20h)</a
                                 >
                             </li>

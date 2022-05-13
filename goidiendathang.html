@@ -9,14 +9,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <link rel="stylesheet" href="assets/css/grid.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/account.css" />
+        <link rel="stylesheet" href="assets/css/goidiendathang.css" />
         <script src="assets/js/main.js" defer></script>
     </head>
 
-    <body class="body">
+    <body>
         <!-- header -->
         <div class="top-site-banner">
-            <a href="">
+            <a href="#">
                 <img class="img-fluid c-none" src="assets/images/top_banner.jpg" alt="" />
                 <img class="img-fluid l-none m-none" src="assets/images/top_banner_mb.jpg" alt="" />
             </a>
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col l-3">
                         <div class="header__logo logo">
-                            <a href="index.html">
+                            <a href="trangchu.html">
                                 <img src="assets/images/logo.jpg" alt="" />
                             </a>
                         </div>
@@ -47,10 +47,10 @@
                                 </button>
                             </form>
                             <ul class="search-list">
-                                <li class="mr-12"><a href="#">Bánh kem</a></li>
-                                <li class="mr-12"><a href="#">Cupcake</a></li>
-                                <li class="mr-12"><a href="#">Donut</a></li>
-                                <li class="mr-12"><a href="#">Socola</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=bánh+kem">Bánh kem</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Cupcake">Cupcake</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Donut">Donut</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Socola">Socola</a></li>
                             </ul>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                 </a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#">
+                                <a href="dangnhap.html">
                                     <i>
                                         <img class="header__menu-icon" src="assets/images/account-icon.png" alt="" />
                                     </i>
@@ -86,9 +86,10 @@
                                 </a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#">
-                                    <i>
+                                <a href="giohang.html">
+                                    <i style="position: relative;">
                                         <img class="header__menu-icon" src="assets/images/cart-icon.png" alt="" />
+                                        <span class="cart-quantity"></span>
                                     </i>
                                     <span>Giỏ hàng</span>
                                 </a>
@@ -101,19 +102,18 @@
         <nav class="nav">
             <div class="grid wide">
                 <div class="row">
-                    <input type="radio" name="navRadio" id="navRadio2" />
                     <ul class="nav__list col l-11 list-unstyled">
                         <li class="nav__list-item mr-25">
-                            <a href="#">Trang chủ</a>
+                            <a href="trangchu.html">Trang chủ</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Giới thiệu</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Quà tặng 08/03</a>
+                            <a href="sanpham.html">Quà tặng 08/03</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Chương trình khuyến mãi</a>
+                            <a href="sanpham.html">Chương trình khuyến mãi</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Bánh ngon mỗi ngày</a>
@@ -125,21 +125,22 @@
                             <a href="#">Chuyên mục làm bánh</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Liên hệ</a>
+                            <a href="lienhe.html">Liên hệ</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Góp ý / Khiếu nại</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Tìm kiếm</a>
+                            <a href="timkiem.html">Tìm kiếm</a>
                         </li>
                     </ul>
                     <div class="nav__btn col l-1">
-                        <label for="">
-                            <input type="radio" name="navRadio" id="navRadio1 checked" />
-                            <i class="fa-solid fa-angle-left nav__btn-icon disabled"></i>
+                        <label class="nav__btn-label">
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio1"  checked/>
+                            <i class="fa-solid fa-angle-left nav__btn-icon"></i>
                         </label>
-                        <label for="navRadio2">
+                        <label class="nav__btn-label">
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio2"/>
                             <i class="fa-solid fa-angle-right nav__btn-icon"></i>
                         </label>
                     </div>
@@ -147,69 +148,42 @@
             </div>
         </nav>
         <!-- main -->
-        <main class="main bg--white">
-            <div class="grid wide">
-                <div class="row">
-                    <div class="col l-12">
-                        <ul class="breadcrumbs">
-                            <li>
-                                <a href="">Trang chủ</a>
-                            </li>
-                            <li>
-                                <a href="">Danh mục</a>
-                            </li>
-                            <li>Tất cả sản phẩm</li>
-                        </ul>
-                    </div>
+        <main class="main">
+            <div class="container">
+                <div class="text-content">
+                    <h1>Trang chủ</h1>
                 </div>
-                <div class="row">
-                    <div class="col l-12">
-                        <div class="section login">
-                            <form class="form" action="">
-                                <div class="form-head">
-                                    <div class="form-title">ĐĂNG KÝ TÀI KHOẢN</div>
-                                    <div class="form-subtitle">Bạn đã có tài khoản ? <a class="text--under" href="">Đăng nhập tại đây</a></div>
-                                </div>
-                                <div class="form-body">
-                                    <div class="form-group required">
-                                        <label>Họ</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="form-group required">
-                                        <label>Tên</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="form-group required">
-                                        <label>Số điện thoại</label>
-                                        <input type="text">
-                                    </div>
-                                    <div class="form-group required">
-                                        <label>Email</label>
-                                        <input type="email">
-                                    </div>
-                                    <div class="form-group required">
-                                        <label>Mật khẩu</label>
-                                        <input type="password">
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-btn" type="submit" value="Đăng ký">
-                                    </div>
-                                </div>
-                                <div class="form-foot">
-                                    <p>Hoặc đăng nhập bằng</p>
-                                    <div class="form-login-by">
-                                        <a href="#" class="google media">
-                                            <i class="fa-brands fa-google-plus-g"></i>
-                                            <span>Google</span>
-                                        </a>
-                                        <a href="#" class="facebook media">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                            <span>facebook</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                <div class="callorder">
+                    <div class="callorder-child1">
+                        <h1>Gọi điện đặt hàng</h1>
+                        <p class="topchild1">
+                            Nhanh chóng tiện lợi và chính xác, Quý khách hàng có thể gọi điện tới Hotline: 099.999.9999
+                            để tiến hành đặt hàng.
+                        </p>
+                        <p class="step">Nhân viên EGA-CAKE sẽ thực hiện tư vấn, hỗ trợ khách hàng theo các bước:</p>
+                        <ol class="step-callorder">
+                            <li><p>Cung cấp thông tin sản phẩm dịch vụ</p></li>
+                            <li><p>Hướng dẫn đặt hàng</p></li>
+                            <li><p>Thiết lập đơn hàng</p></li>
+                            <li><p>Xác nhận đơn hàng</p></li>
+                            <li><p>Tiến hành thanh toán, và giao hàng</p></li>
+                        </ol>
+                    </div>
+                    <div class="callorder-child2">
+                        <h2>Ngoài ra quý khách có thể đặt hàng qua livechat</h2>
+                        <p>
+                            Tương tự phương thức đặt hàng qua Hotline, EGA-CAKE cung cấp tính năng Livechat
+                            Facebook/Zalo, giúp khách hàng dễ dàng nhận được sự hỗ trợ từ Mùa Thu Hoạch, và nhanh chóng
+                            đặt hàng qua Livechat.
+                        </p>
+                    </div>
+                    <div class="callorder-child3">
+                        <h2>Gửi email đặt hàng</h2>
+                        <p>Hiện EGA-CAKE chưa thực hiện đặt hàng qua Email đối với khách hàng cá nhân</p>
+                        <p>
+                            Nếu Quý <span>khách hàng doanh nghiệp, tổ chức</span> cần hỗ trợ tiến hành xử lý đơn hàng
+                            với số lượng lớn vui lòng email tới địa chỉ: support@egany.com
+                        </p>
                     </div>
                 </div>
             </div>
@@ -244,7 +218,7 @@
                                     <img src="assets/images/email-icon.svg" alt="" />
                                 </i>
                             </div>
-                            <div class="col l-5 color--white">
+                            <div class="col l-5 color-white">
                                 <span>Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký ngay.</span>
                             </div>
                             <div class="col l-6">
@@ -321,21 +295,21 @@
                             <li>
                                 <a href="#"
                                     >Gọi mua hàng:
-                                    <a class="color--blue bold" href="tel:19003333">19003333</a>
+                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
                                     (8h-20h)</a
                                 >
                             </li>
                             <li>
                                 <a href="#"
                                     >Gọi bảo hành:
-                                    <a class="color--blue bold" href="tel:19003333">19003333</a>
+                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
                                     (8h-20h)</a
                                 >
                             </li>
                             <li>
                                 <a href="#"
                                     >Gọi khiếu nại:
-                                    <a class="color--blue bold" href="tel:19003333">19003333</a>
+                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
                                     (8h-20h)</a
                                 >
                             </li>

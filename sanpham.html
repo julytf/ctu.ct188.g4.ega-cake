@@ -11,29 +11,14 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/sanpham.css" />
         <script src="assets/js/main.js" defer></script>
-
-        <style testing>
-            main {
-                /* min-height: 10px; */
-                /* border: 1px solid green; */
-            }
-            main * {
-                /* min-height: 10px; */
-                /* border: 1px solid green; */
-                /* padding: 1px; */
-                /* box-sizing: border-box; */
-            }
-
-            body {
-                /* background: black !important; */
-            }
-        </style>
+        <script src="api/product/index.js"></script>
+        <script src="assets/js/sanpham.js" defer></script>
     </head>
 
     <body class="body">
         <!-- header -->
         <div class="top-site-banner">
-            <a href="">
+            <a href="#">
                 <img class="img-fluid c-none" src="assets/images/top_banner.jpg" alt="" />
                 <img class="img-fluid l-none m-none" src="assets/images/top_banner_mb.jpg" alt="" />
             </a>
@@ -44,7 +29,7 @@
                 <div class="row">
                     <div class="col l-3">
                         <div class="header__logo logo">
-                            <a href="index.html">
+                            <a href="trangchu.html">
                                 <img src="assets/images/logo.jpg" alt="" />
                             </a>
                         </div>
@@ -64,10 +49,10 @@
                                 </button>
                             </form>
                             <ul class="search-list">
-                                <li class="mr-12"><a href="#">Bánh kem</a></li>
-                                <li class="mr-12"><a href="#">Cupcake</a></li>
-                                <li class="mr-12"><a href="#">Donut</a></li>
-                                <li class="mr-12"><a href="#">Socola</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=bánh+kem">Bánh kem</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Cupcake">Cupcake</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Donut">Donut</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Socola">Socola</a></li>
                             </ul>
                         </div>
                     </div>
@@ -95,7 +80,7 @@
                                 </a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#">
+                                <a href="dangnhap.html">
                                     <i>
                                         <img class="header__menu-icon" src="assets/images/account-icon.png" alt="" />
                                     </i>
@@ -103,9 +88,10 @@
                                 </a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#">
-                                    <i>
+                                <a href="giohang.html">
+                                    <i style="position: relative;">
                                         <img class="header__menu-icon" src="assets/images/cart-icon.png" alt="" />
+                                        <span class="cart-quantity"></span>
                                     </i>
                                     <span>Giỏ hàng</span>
                                 </a>
@@ -118,19 +104,18 @@
         <nav class="nav">
             <div class="grid wide">
                 <div class="row">
-                    <input type="radio" name="navRadio" id="navRadio2" />
                     <ul class="nav__list col l-11 list-unstyled">
                         <li class="nav__list-item mr-25">
-                            <a href="#">Trang chủ</a>
+                            <a href="trangchu.html">Trang chủ</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Giới thiệu</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Quà tặng 08/03</a>
+                            <a href="sanpham.html">Quà tặng 08/03</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Chương trình khuyến mãi</a>
+                            <a href="sanpham.html">Chương trình khuyến mãi</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Bánh ngon mỗi ngày</a>
@@ -142,21 +127,22 @@
                             <a href="#">Chuyên mục làm bánh</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Liên hệ</a>
+                            <a href="lienhe.html">Liên hệ</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Góp ý / Khiếu nại</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Tìm kiếm</a>
+                            <a href="timkiem.html">Tìm kiếm</a>
                         </li>
                     </ul>
                     <div class="nav__btn col l-1">
-                        <label for="">
-                            <input type="radio" name="navRadio" id="navRadio1 checked" />
-                            <i class="fa-solid fa-angle-left nav__btn-icon disabled"></i>
+                        <label class="nav__btn-label">
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio1"  checked/>
+                            <i class="fa-solid fa-angle-left nav__btn-icon"></i>
                         </label>
-                        <label for="navRadio2">
+                        <label class="nav__btn-label">
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio2"/>
                             <i class="fa-solid fa-angle-right nav__btn-icon"></i>
                         </label>
                     </div>
@@ -301,7 +287,7 @@
                                 <div class="col l-9">
                                     <div class="section grid products">
                                         <div class="row no-gutters">
-                                            <div class="col l-3">
+                                            <!-- <div class="col l-3">
                                                 <div class="product">
                                                     <figure class="product__figure">
                                                         <img
@@ -323,260 +309,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh cupcake queen</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh chocolate raspberry cupcakes</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh chocolate raspberry cupcakes</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh chocolate raspberry cupcakes</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh cupcake queen</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh chocolate raspberry cupcakes</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh chocolate raspberry cupcakes</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh chocolate raspberry cupcakes</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh cupcake queen</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh chocolate raspberry cupcakes</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-3">
-                                                <div class="product">
-                                                    <figure class="product__figure">
-                                                        <img
-                                                            src="assets\images\products\banh-nama-socola-tra-xanh.jpg"
-                                                            alt=""
-                                                        />
-                                                    </figure>
-                                                    <div class="product__body">
-                                                        <div class="product__name">Bánh chocolate raspberry cupcakes</div>
-                                                        <div class="product__cta">
-                                                            <div class="price-box">
-                                                                <div class="price">130,000₫</div>
-                                                                <div class="prediscount_price">150,000₫</div>
-                                                                <div class="discount-percent">-13%</div>
-                                                            </div>
-                                                            <div class="product__btn btn">
-                                                                <i class="fa-solid fa-bag-shopping icon"></i>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -593,9 +326,9 @@
                                 </div>
                             </div>
                             <div class="section__body bg--white">
-                                <div class="grid products">
+                                <div class="grid products" data-quantity="4">
                                     <div class="row no-gutters">
-                                        <div class="col l-2-4">
+                                        <!-- <div class="col l-2-4">
                                             <div class="product">
                                                 <figure class="product__figure">
                                                     <img
@@ -719,7 +452,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>

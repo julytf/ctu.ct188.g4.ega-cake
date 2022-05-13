@@ -9,13 +9,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
         <link rel="stylesheet" href="assets/css/grid.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/giohang.css" />
+        <link rel="stylesheet" href="assets/css/account.css" />
         <script src="assets/js/main.js" defer></script>
-        <script src="api/product/index.js" defer></script>
-        <script src="assets/js/sanpham.js" defer></script>
+        <script src="assets/js/validation.js" defer></script>
     </head>
 
-    <body>
+    <body class="body">
         <!-- header -->
         <div class="top-site-banner">
             <a href="#">
@@ -150,31 +149,73 @@
             </div>
         </nav>
         <!-- main -->
-        <main class="main">
-            <div class="content">
-                <div class="container">
-                    <div class="content-title plr-10">
-                        <div class="content-title-child ptb-4">
-                            <p>Trang chủ / Giỏ Hàng (0)</p>
-                        </div>
+        <main class="main bg--white">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12">
+                        <ul class="breadcrumbs">
+                            <li>
+                                <a href="">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="">Danh mục</a>
+                            </li>
+                            <li>Tất cả sản phẩm</li>
+                        </ul>
                     </div>
-                    <div class="cart-empty p12-20 mb-16">
-                        <div class="img-cart-empty mb-20">
-                            <img src="assets/images/cart_empty.png" alt="" />
-                        </div>
-                        <h3 class="empty mb-8">Hỏng có gì trong giỏ hết</h3>
-                        <p class="mb-16">Về cửa hàng để chọn mua sản phẩm bạn nhé!!</p>
-                        <a href="/" title="Mua sắm ngay" class="btn btn-empty">Mua sắm ngay</a>
-                    </div>
-                    <div class="product">
-                        <div class="title-product">
-                            <h2 class="product-stick">Sản phẩm thường mua cùng</h2>
-                        </div>
-                        
-                        <div class="section__body grip products" data-quantity="8">
-                            <div class="row no-gutters">
-                            
-                            </div>
+                </div>
+                <div class="row">
+                    <div class="col l-12">
+                        <div class="section login">
+                            <form class="form form-register" action="" onsubmit="return frmValidate5(this)">
+                                <div class="form-head">
+                                    <div class="form-title">ĐĂNG KÝ TÀI KHOẢN</div>
+                                    <div class="form-subtitle">Bạn đã có tài khoản ? <a class="text--under" href="">Đăng nhập tại đây</a></div>
+                                </div>
+                                <div class="form-body">
+                                    <div class="form-group required">
+                                        <label>Họ</label>
+                                        <input type="text" name="lastName">
+                                        <small class="error"></small>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label>Tên</label>
+                                        <input type="text" name="firstName">
+                                        <small class="error"></small>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label>Số điện thoại</label>
+                                        <input type="text" name="phone">
+                                        <small class="error"></small>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label>Email</label>
+                                        <input type="email" name="email">
+                                        <small class="error"></small>
+                                    </div>
+                                    <div class="form-group required">
+                                        <label>Mật khẩu</label>
+                                        <input type="password" name="password">
+                                        <small class="error"></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-btn" type="submit" value="Đăng ký">
+                                    </div>
+                                </div>
+                                <div class="form-foot">
+                                    <p>Hoặc đăng nhập bằng</p>
+                                    <div class="form-login-by">
+                                        <a href="#" class="google media">
+                                            <i class="fa-brands fa-google-plus-g"></i>
+                                            <span>Google</span>
+                                        </a>
+                                        <a href="#" class="facebook media">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                            <span>facebook</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -210,7 +251,7 @@
                                     <img src="assets/images/email-icon.svg" alt="" />
                                 </i>
                             </div>
-                            <div class="col l-5 color-white">
+                            <div class="col l-5 color--white">
                                 <span>Bạn muốn nhận khuyến mãi đặc biệt? Đăng ký ngay.</span>
                             </div>
                             <div class="col l-6">
@@ -287,21 +328,21 @@
                             <li>
                                 <a href="#"
                                     >Gọi mua hàng:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a class="color--blue bold" href="tel:19003333">19003333</a>
                                     (8h-20h)</a
                                 >
                             </li>
                             <li>
                                 <a href="#"
                                     >Gọi bảo hành:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a class="color--blue bold" href="tel:19003333">19003333</a>
                                     (8h-20h)</a
                                 >
                             </li>
                             <li>
                                 <a href="#"
                                     >Gọi khiếu nại:
-                                    <a class="link--blue bold" href="tel:19003333">19003333</a>
+                                    <a class="color--blue bold" href="tel:19003333">19003333</a>
                                     (8h-20h)</a
                                 >
                             </li>

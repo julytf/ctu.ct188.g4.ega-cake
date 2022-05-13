@@ -11,29 +11,15 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/trangchu.css" />
         <script src="assets/js/main.js" defer></script>
-
-        <style testing>
-            main {
-                /* min-height: 10px; */
-                /* border: 1px solid green; */
-            }
-            main * {
-                /* min-height: 10px; */
-                /* border: 1px solid green; */
-                /* padding: 1px; */
-                /* box-sizing: border-box; */
-            }
-
-            body {
-                /* background: black !important; */
-            }
-        </style>
+        <script src="assets/js/slider.js" defer></script>
+        <script src="api/product/index.js" defer></script>
+        <script src="assets/js/sanpham.js" defer></script>
+        <script src="assets/js/trangchu.js" defer></script>
     </head>
-
     <body class="body">
         <!-- header -->
         <div class="top-site-banner">
-            <a href="">
+            <a href="#">
                 <img class="img-fluid c-none" src="assets/images/top_banner.jpg" alt="" />
                 <img class="img-fluid l-none m-none" src="assets/images/top_banner_mb.jpg" alt="" />
             </a>
@@ -44,7 +30,7 @@
                 <div class="row">
                     <div class="col l-3">
                         <div class="header__logo logo">
-                            <a href="index.html">
+                            <a href="trangchu.html">
                                 <img src="assets/images/logo.jpg" alt="" />
                             </a>
                         </div>
@@ -64,10 +50,10 @@
                                 </button>
                             </form>
                             <ul class="search-list">
-                                <li class="mr-12"><a href="#">Bánh kem</a></li>
-                                <li class="mr-12"><a href="#">Cupcake</a></li>
-                                <li class="mr-12"><a href="#">Donut</a></li>
-                                <li class="mr-12"><a href="#">Socola</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=bánh+kem">Bánh kem</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Cupcake">Cupcake</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Donut">Donut</a></li>
+                                <li class="mr-12"><a href="timkiem.html?q=Socola">Socola</a></li>
                             </ul>
                         </div>
                     </div>
@@ -95,7 +81,7 @@
                                 </a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#">
+                                <a href="dangnhap.html">
                                     <i>
                                         <img class="header__menu-icon" src="assets/images/account-icon.png" alt="" />
                                     </i>
@@ -103,9 +89,10 @@
                                 </a>
                             </li>
                             <li class="header__menu-item">
-                                <a href="#">
-                                    <i>
+                                <a href="giohang.html">
+                                    <i style="position: relative">
                                         <img class="header__menu-icon" src="assets/images/cart-icon.png" alt="" />
+                                        <span class="cart-quantity"></span>
                                     </i>
                                     <span>Giỏ hàng</span>
                                 </a>
@@ -118,52 +105,51 @@
         <nav class="nav">
             <div class="grid wide">
                 <div class="row">
-                    <input type="radio" name="navRadio" id="navRadio2" />
                     <ul class="nav__list col l-11 list-unstyled">
                         <li class="nav__list-item mr-25">
-                            <a href="#">Trang chủ</a>
+                            <a href="trangchu.html">Trang chủ</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Giới thiệu</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Quà tặng 08/03</a>
+                            <a href="sanpham.html">Quà tặng 08/03</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Chương trình khuyến mãi</a>
+                            <a href="sanpham.html">Chương trình khuyến mãi</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Bánh ngon mỗi ngày</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Công thức làm bánh</a>
+                            <a href="congthuc.html">Công thức làm bánh</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Chuyên mục làm bánh</a>
+                            <a href="chuyenmuc.html">Chuyên mục làm bánh</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Liên hệ</a>
+                            <a href="lienhe.html">Liên hệ</a>
                         </li>
                         <li class="nav__list-item mr-25">
                             <a href="#">Góp ý / Khiếu nại</a>
                         </li>
                         <li class="nav__list-item mr-25">
-                            <a href="#">Tìm kiếm</a>
+                            <a href="timkiem.html">Tìm kiếm</a>
                         </li>
                     </ul>
                     <div class="nav__btn col l-1">
-                        <label for="">
-                            <input type="radio" name="navRadio" id="navRadio1 checked" />
-                            <i class="fa-solid fa-angle-left nav__btn-icon disabled"></i>
+                        <label class="nav__btn-label">
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio1" checked />
+                            <i class="fa-solid fa-angle-left nav__btn-icon"></i>
                         </label>
-                        <label for="navRadio2">
+                        <label class="nav__btn-label">
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio2" />
                             <i class="fa-solid fa-angle-right nav__btn-icon"></i>
                         </label>
                     </div>
                 </div>
             </div>
         </nav>
-
         <!-- main -->
         <main class="main">
             <div class="grid wide">
@@ -176,48 +162,70 @@
                             </div>
                             <ul class="sidebar-menu__body">
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_1.png" alt="" />
-                                    <span> Tổng hợp khuyến mãi </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_1.png" alt="" />
+                                        <span> Tổng hợp khuyến mãi </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_2.png" alt="" />
-                                    <span> Bộ sưu tập bánh </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_2.png" alt="" />
+                                        <span> Bộ sưu tập bánh </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_3.png" alt="" />
-                                    <span> Bánh chocolate </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_3.png" alt="" />
+                                        <span> Bánh chocolate </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_4.png" alt="" />
-                                    <span> Bánh mousse </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_4.png" alt="" />
+                                        <span> Bánh mousse </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_5.png" alt="" />
-                                    <span> Bánh mì </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_5.png" alt="" />
+                                        <span> Bánh mì </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_6.png" alt="" />
-                                    <span> Bánh kem </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_6.png" alt="" />
+                                        <span> Bánh kem </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_7.png" alt="" />
-                                    <span> Bánh ngọt </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_7.png" alt="" />
+                                        <span> Bánh ngọt </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_8.png" alt="" />
-                                    <span> Bánh bông lan </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_8.png" alt="" />
+                                        <span> Bánh bông lan </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_9.png" alt="" />
-                                    <span> Bánh rau câu </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_9.png" alt="" />
+                                        <span> Bánh rau câu </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_10.png" alt="" />
-                                    <span> Sản phẩm theo mùa </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_10.png" alt="" />
+                                        <span> Sản phẩm theo mùa </span>
+                                    </a>
                                 </li>
                                 <li class="sidebar-menu__item">
-                                    <img src="assets/images/menu_icon_11.png" alt="" />
-                                    <span> Sản phẩm đóng gói </span>
+                                    <a href="sanpham.html">
+                                        <img src="assets/images/menu_icon_11.png" alt="" />
+                                        <span> Sản phẩm đóng gói </span>
+                                    </a>
                                 </li>
                             </ul>
                             <div class="sidebar-menu__foot">
@@ -321,9 +329,9 @@
                                     </div>
                                     <!-- <div class="flashsale__news">Giảm 30K cho đơn hàng từ 399K</div> -->
                                 </div>
-                                <div class="section__body grip products">
+                                <div class="section__body grip products" data-quantity="8">
                                     <div class="row no-gutters">
-                                        <div class="col l-3">
+                                        <!-- <div class="col l-3">
                                             <div class="product">
                                                 <figure class="product__figure">
                                                     <img
@@ -442,7 +450,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -484,14 +492,14 @@
                                     </div>
                                 </div>
                                 <div class="section__body">
-                                    <div class="grid products">
+                                    <div class="grid products" data-quantity="6">
                                         <div class="row no-gutters">
                                             <div class="col l-6">
                                                 <div class="product banner">
                                                     <img class="img-fluid" src="assets/images/section_hot.jpg" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="col l-3">
+                                            <!-- <div class="col l-3">
                                                 <div class="product">
                                                     <figure class="product__figure">
                                                         <img
@@ -682,7 +690,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -706,9 +714,9 @@
                                     </div>
                                 </div>
                                 <div class="section__body">
-                                    <div class="grid products">
+                                    <div class="grid products" data-quantity="4">
                                         <div class="row no-gutters">
-                                            <div class="col l-3">
+                                            <!-- <div class="col l-3">
                                                 <div class="product">
                                                     <figure class="product__figure">
                                                         <img
@@ -835,7 +843,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -908,7 +916,7 @@
                                                     />
                                                     <div class="blog__body">
                                                         <h3 class="blog__title">
-                                                            <a href="">
+                                                            <a href="#">
                                                                 Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ
                                                                 snacks"
                                                             </a>
@@ -933,7 +941,7 @@
                                                     />
                                                     <div class="blog__body">
                                                         <h3 class="blog__title">
-                                                            <a href="">
+                                                            <a href="#">
                                                                 Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ
                                                                 snacks"
                                                             </a>
@@ -958,7 +966,7 @@
                                                     />
                                                     <div class="blog__body">
                                                         <h3 class="blog__title">
-                                                            <a href="">
+                                                            <a href="#">
                                                                 Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ
                                                                 snacks"
                                                             </a>
@@ -983,7 +991,7 @@
                                                     />
                                                     <div class="blog__body">
                                                         <h3 class="blog__title">
-                                                            <a href="">
+                                                            <a href="#">
                                                                 Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ
                                                                 snacks"
                                                             </a>
@@ -1018,7 +1026,7 @@
                                                     />
                                                     <div class="blog__body">
                                                         <h3 class="blog__title">
-                                                            <a href="">
+                                                            <a href="#">
                                                                 Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ
                                                                 snacks"
                                                             </a>
@@ -1043,7 +1051,7 @@
                                                     />
                                                     <div class="blog__body">
                                                         <h3 class="blog__title">
-                                                            <a href="">
+                                                            <a href="#">
                                                                 Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ
                                                                 snacks"
                                                             </a>
@@ -1068,7 +1076,7 @@
                                                     />
                                                     <div class="blog__body">
                                                         <h3 class="blog__title">
-                                                            <a href="">
+                                                            <a href="#">
                                                                 Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ
                                                                 snacks"
                                                             </a>
@@ -1093,7 +1101,7 @@
                                                     />
                                                     <div class="blog__body">
                                                         <h3 class="blog__title">
-                                                            <a href="">
+                                                            <a href="#">
                                                                 Công thức Bánh quy yến mạch chocolate cho "Người chơi hệ
                                                                 snacks"
                                                             </a>
@@ -1181,30 +1189,32 @@
                             <li>
                                 <i class="fa-solid fa-mobile-screen icon"></i>
                                 <strong>Số điện thoại: </strong>
-                                <a class="link-h--pri" href="tel:19003333">19003333</a>
+                                <a class="color--h-pri" href="tel:19003333">19003333</a>
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope icon"></i>
                                 <strong>Email: </strong>
-                                <a class="link-h--pri" href="mailto:support@egany.com">support@egany.com</a>
+                                <a class="color--h-pri" href="mailto:support@egany.com">support@egany.com</a>
                             </li>
                         </ul>
-                        <img class="logo-bct p-6" src="assets/images/logo_bct.png" alt="" width="104px" />
+                        <a href="#">
+                            <img class="logo-bct p-6" src="assets/images/logo_bct.png" alt="" width="104px" />
+                        </a>
                     </div>
                     <div class="col l-3">
                         <h4 class="title-menu">Hỗ trợ khách hàng</h4>
                         <ul class="list-menu">
                             <li>
-                                <a class="link-h--pri" href="#">Về chúng tôi</a>
+                                <a class="color--h-pri" href="#">Về chúng tôi</a>
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Hệ thống cửa hàng</a>
+                                <a class="color--h-pri" href="#">Hệ thống cửa hàng</a>
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Gọi điện đặt hàng</a>
+                                <a class="color--h-pri" href="goidiendathang.html">Gọi điện đặt hàng</a>
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Xuất hóa đơn điện tử</a>
+                                <a class="color--h-pri" href="xuathoadondientu.html">Xuất hóa đơn điện tử</a>
                             </li>
                         </ul>
                     </div>
@@ -1212,13 +1222,13 @@
                         <h4 class="title-menu">Chính sách</h4>
                         <ul class="list-menu">
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách bán hàng</a>
+                                <a class="color--h-pri" href="#">Chính sách bán hàng</a>
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách đổi trả</a>
+                                <a class="color--h-pri" href="doitra.html">Chính sách đổi trả</a>
                             </li>
                             <li>
-                                <a class="link-h--pri" href="#">Chính sách giao hàng</a>
+                                <a class="color--h-pri" href="#">Chính sách giao hàng</a>
                             </li>
                         </ul>
                     </div>
@@ -1248,14 +1258,16 @@
                             </li>
                         </ul>
                         <h4 class="title-menu">Phương thức thanh toán</h4>
-                        <img src="assets/images/footer_trustbadge.jpg" alt="" />
+                        <a href="#">
+                            <img src="assets/images/footer_trustbadge.jpg" alt="" />
+                        </a>
                     </div>
                 </div>
                 <div class="row my-8">
                     <div class="col l-12">
                         © Bản quyền thuộc về
-                        <a class="link-h--pri" href="#">EGANY</a> | Cung cấp bởi
-                        <a class="link-h--pri" href="">Haravan</a>
+                        <a class="color--h-pri" href="#">EGANY</a> | Cung cấp bởi
+                        <a class="color--h-pri" href="#">Haravan</a>
                     </div>
                 </div>
             </div>

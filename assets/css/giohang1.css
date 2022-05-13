@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #a50a06;
+    --secondary-color: #fabd0d;
+    --header-background: #2d2d2d;
+    --body-background: #F8F8F8;
+    --footer-color: #333333;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.cart-sum tbody .sanpham {
+    display: flex;
+    align-items: center;
+}
+.cart-sum tbody .soluong input {
+    max-width: 30px;
+}
+.cart-empty > h2 {
+    padding-bottom: 30px;
+}
+.cart-empty img {
+    width: 100px;
+}
+.cart-empty .cart-sum {
+    width: 100%;
+}
+.cart-empty .cart-sum thead tr th:first-child {
+    text-align: left;
+}
+
+.cart-empty .cart-sum thead tr th:last-child {
+    text-align: right;
+}
+.cart-empty .cart-sum tr {
+    border-bottom: 1px solid #00000033;
+}
+
+.cart-empty .cart-sum tbody tr td:first-child {
+    text-align: left;
+}
+
+.cart-empty .cart-sum tbody tr td:last-child {
+    text-align: right;
+}
+.cart-empty .cart-sum tr td {
+    /* border-bottom: 1px solid #3c3c33; */
+    padding: 12px 0;
+}
+.price-total {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.cart-sum .sanpham p {
+    font-weight: bold;
+}
+
+.cart-sum span,
+.price-total span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.cart-sum thead tr th {
+    /* border-bottom: 1px solid #3c3c33; */
+}
+
+.cart-sum {
+    /* border-top: 1px solid #3c3c33;
+    border-left: 1px solid #3c3c33;
+    border-right: 1px solid #3c3c33; */
+    border-radius: 10px;
+}
