@@ -11,8 +11,8 @@ table {
 }
 
 .cart-sum tbody .sanpham {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
 }
 .cart-sum tbody .soluong input {
     max-width: 30px;

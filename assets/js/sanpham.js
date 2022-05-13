@@ -48,9 +48,9 @@ function displayProduct(productList, container, quantity = -1,  q = '') {
                             `<div class="prediscount_price">${product['prediscount-price']}</div>
                             <div class="discount-percent">-${product.discount}%</div>`) +
                         `</div>
-                        <div class="product__btn btn">
+                        <button onclick="addToCart('${product.id}')" class="product__btn btn">
                             <i class="fa-solid fa-bag-shopping icon"></i>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -62,5 +62,10 @@ function displayProduct(productList, container, quantity = -1,  q = '') {
     })
 }
 
-
-
+function addToCart(id) {
+    let quantity = parseInt(localStorage.getItem(id))
+    if(!quantity)
+        localStorage.setItem(id, 1)
+    else
+        localStorage.setItem(id, quantity+1)
+}
