@@ -1,13 +1,17 @@
+/* Lam Chan Vu  */
+
 var container = document.querySelector('.cart-sum tbody')
 var sumSpan = document.querySelector('span.sum')
 var sum = 0
 
-Object.values(productList).some((product) => {
-    let quantity = localStorage.getItem(product.id)
+let cart = JSON.parse(localStorage.getItem('cart')) || {}
+
+Object.keys(cart).some((id) => {
+    let product = productList[id]
+    let quantity = cart[id]
     if(!quantity)
         return;
     let tr = document.createElement('tr')
-    tr.classList = 'sanpham'
     tr.innerHTML = `
         <td class="sanpham">
             <img src="${product.img}" alt="" />

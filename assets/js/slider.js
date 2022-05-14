@@ -1,3 +1,5 @@
+/* Lam Chan Vu  */
+
 var sliderRadios = document.querySelectorAll('.slider__radio')
 
 var prevSlide = document.querySelector('.slider__prev')

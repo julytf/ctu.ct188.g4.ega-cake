@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="assets/css/grid.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="assets/css/giohang.css" />
+        <link rel="stylesheet" href="assets/css/giohang1.css" />
         <script src="assets/js/main.js" defer></script>
         <script src="api/product/index.js" defer></script>
-        <script src="assets/js/sanpham.js" defer></script>
+        <script src="assets/js/giohang.js" defer></script>
     </head>
 
     <body>
@@ -89,7 +90,7 @@
                             </li>
                             <li class="header__menu-item">
                                 <a href="giohang.html">
-                                    <i style="position: relative;">
+                                    <i style="position: relative">
                                         <img class="header__menu-icon" src="assets/images/cart-icon.png" alt="" />
                                         <span class="cart-quantity"></span>
                                     </i>
@@ -138,11 +139,11 @@
                     </ul>
                     <div class="nav__btn col l-1">
                         <label class="nav__btn-label">
-                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio1"  checked/>
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio1" checked />
                             <i class="fa-solid fa-angle-left nav__btn-icon"></i>
                         </label>
                         <label class="nav__btn-label">
-                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio2"/>
+                            <input class="nav-radio" type="radio" name="navRadio" id="navRadio2" />
                             <i class="fa-solid fa-angle-right nav__btn-icon"></i>
                         </label>
                     </div>
@@ -159,22 +160,66 @@
                         </div>
                     </div>
                     <div class="cart-empty p12-20 mb-16">
-                        <div class="img-cart-empty mb-20">
-                            <img src="assets/images/cart_empty.png" alt="" />
+                        <h2>Giỏ hàng của bạn</h2>
+                        <table class="cart-sum">
+                            <thead>
+                                <tr>
+                                    <th>Sản phẩm</th>
+                                    <th>Giá</th>
+                                    <th>Số Lượng</th>
+                                    <th>Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td class="sanpham">
+                                        <img src="assets/images/products/banh-blue-sky-cupcakes.jpg" alt="" />
+                                        <p>Mediocre Granite Plate</p>
+                                    </td>
+                                    <td class="gia">
+                                        <p>
+                                            <span>820,000<sup>đ</sup></span>
+                                        </p>
+                                    </td>
+                                    <td class="soluong">
+                                        <input type="number" name="" id="" value="1" min="0" />
+                                    </td>
+                                    <td class="tongtien">
+                                        <p>
+                                            <span>820,000<sup>đ</sup></span>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="sanpham">
+                                        <img src="assets/images/products/banh-blue-sky-cupcakes.jpg" alt="" />
+                                        <p>Heavy Duty Paper Car</p>
+                                    </td>
+                                    <td class="gia">
+                                        <p>
+                                            <span>560,000<sup>đ</sup></span>
+                                        </p>
+                                    </td>
+                                    <td class="soluong">
+                                        <input type="number" name="" id="" value="1" min="0" />
+                                    </td>
+                                    <td class="tongtien">
+                                        <p>
+                                            <span>560,000<sup>đ</sup></span>
+                                        </p>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                        <div class="price-total">
+                            <p>
+                                Tổng các sản phẩm = <span class="sum">1.380.000</span><sup>đ</sup>
+                            </p>
                         </div>
-                        <h3 class="empty mb-8">Hỏng có gì trong giỏ hết</h3>
-                        <p class="mb-16">Về cửa hàng để chọn mua sản phẩm bạn nhé!!</p>
-                        <a href="/" title="Mua sắm ngay" class="btn btn-empty">Mua sắm ngay</a>
                     </div>
                     <div class="product">
                         <div class="title-product">
                             <h2 class="product-stick">Sản phẩm thường mua cùng</h2>
-                        </div>
-                        
-                        <div class="section__body grip products" data-quantity="8">
-                            <div class="row no-gutters">
-                            
-                            </div>
                         </div>
                     </div>
                 </div>

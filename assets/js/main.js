@@ -1,3 +1,5 @@
+/* Lam Chan Vu  */
+
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
@@ -31,3 +33,16 @@ Object.values($$('.search-form')).forEach((form, index)=>{
 }
 )
 
+// cart-icon update
+updateCartIcon()    
+
+window.onstorage = updateCartIcon
+
+function updateCartIcon() {
+    let cart = JSON.parse(localStorage.getItem('cart')) || {}
+    let sum = Object.values(cart).reduce((sum, quantity) => sum + quantity , 0)
+    if(!sum)
+        return
+    $('.cart-quantity').textContent = sum < 10 ? sum : '9+'
+    $('.cart-quantity').classList.remove('cart-quantity--hide')
+}

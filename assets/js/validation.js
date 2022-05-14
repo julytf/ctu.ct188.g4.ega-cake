@@ -1,3 +1,5 @@
+/* Lam Chan Vu  */
+
 function frmValidate5(form) {
 	// console.log(form);
     let isValid = true

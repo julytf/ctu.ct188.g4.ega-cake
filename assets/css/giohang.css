@@ -1,3 +1,5 @@
+/* Le Thanh Hung  */
+
 :root {
     --primary-color: #a50a06;
     --secondary-color: #fabd0d;
@@ -6,166 +8,75 @@
     --footer-color: #333333;
 }
 
-.plr-10 {
-    padding-left: 10px;
-    padding-right: 10px;
+table {
+    border-collapse: collapse;
 }
 
-.ptb-4 {
-    padding-top: 4px;
-    padding-bottom: 4px;
+.cart-sum tbody .sanpham {
+    /* display: flex; */
+    /* align-items: center; */
+}
+.cart-sum tbody .soluong input {
+    max-width: 30px;
+}
+.cart-empty > h2 {
+    padding-bottom: 30px;
+}
+.cart-empty img {
+    width: 100px;
+}
+.cart-empty .cart-sum {
+    width: 100%;
+}
+.cart-empty .cart-sum thead tr th:first-child {
+    text-align: left;
 }
 
-.p12-20 {
-    padding: 12px 20px;
+.cart-empty .cart-sum thead tr th:last-child {
+    text-align: right;
+}
+.cart-empty .cart-sum tr {
+    border-bottom: 1px solid #00000033;
 }
 
-.mb-8{
-    margin-bottom:8px;
+.cart-empty .cart-sum tbody tr td:first-child {
+    text-align: left;
 }
 
-.mb-16{
-    margin-bottom: 16px;
+.cart-empty .cart-sum tbody tr td:last-child {
+    text-align: right;
 }
-
-.mb-20{
-    margin-bottom: 20px;
+.cart-empty .cart-sum tr td {
+    /* border-bottom: 1px solid #3c3c33; */
+    padding: 12px 0;
 }
-
-/* content */
-
-.main .container {
-    max-width: 1200px;
-    margin: auto;
+.price-total {
+    margin-top: 20px;
+    font-size: 30px;
+}
+.cart-sum .sanpham {
+    display: flex;
     align-items: center;
 }
-.cart-empty {
-    text-align: center;
-}
 
-.btn-empty {
-    color: var(--primary-color);
-    font-size: 14px;
-    border: 1px solid var(--primary-color);
-    border-radius: 4px;
-    padding: 7px 20px;
-}
-
-.btn-empty:hover {
-    color: #F8F8F8;
-    background-color: var(--primary-color);
-}
-/* 
-.product-stick {
-    font-size: 20px;
+.cart-sum .sanpham p {
     font-weight: bold;
+    margin-left: 20px;
 }
 
-.product-stick:hover {
-    color:var(--primary-color);
-    cursor: pointer;
-}
-
-.product {
-    padding: 24px;
-}
-.product1 {
-    position: relative;
-}
-
-.title-product {
-    padding: 12px 10px;
-}
-
-.product1 {
-    height: 350px;
-    border: 1px solid #333333;
-} */
-
-/* .product1 img {
-    max-width:100%;
-    max-height: 250px;
-    cursor: pointer;
-} */
-
-/* .container-product {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
-.product-items:hover .product__name {
+.cart-sum span,
+.price-total span {
+    font-weight: bold;
     color: var(--primary-color);
 }
 
-.product-items {
-    position: relative;
-    max-width:100%;
-    max-height: 350px;
-    cursor: pointer;
-    border-radius: 7px;
+.cart-sum thead tr th {
+    /* border-bottom: 1px solid #3c3c33; */
 }
 
-.product-items .product__name {
-    margin-left: 5px;
-    font-size: 14px;
-    padding-bottom: 20px;
+.cart-sum {
+    /* border-top: 1px solid #3c3c33;
+    border-left: 1px solid #3c3c33;
+    border-right: 1px solid #3c3c33; */
+    border-radius: 10px;
 }
-.price-box .price {
-    margin-left: 5px;
-    color: var(--primary-color);
-    font-size: 18px;
-    font-weight: 600;
-    padding-bottom: 8px;
-}
-.price-box .prediscount_price {
-    margin-left: 5px;
-    font-size: small;
-    opacity: 0.6;
-    text-decoration: line-through;
-    font-size: 12px;
-}
-.price-box .discount-percent {
-    color: var(--primary-color);
-    font-size: 12px;
-    position: absolute;
-    left: 70px;
-    bottom: 18px;
-}
-.product__btn i {
-    color: var(--primary-color);
-    font-size: 25px;
-    position: absolute;
-    right: 10px;
-    bottom: 35px;
-}
-
-.product-items .product__figure {
-    max-height: 250px;
-    max-width: 100%;
-} */
-
-
-
-
-
-
-
-
-
-
-/* .product1 .plus {
-    position: absolute;
-    bottom: 35px;
-    right: 20px;
-    width: 25px;
-    height: 25px;
-    content: "X";
-    border-radius: 100%;
-    z-index: 9999;
-} */
-
-
-
-/*End Content*/
