@@ -72,5 +72,5 @@ function addToCart(id) {
     else
         cart[id]++
     localStorage.setItem('cart', JSON.stringify(cart))
-    updateCartIcon
+    updateCartIcon()
 }

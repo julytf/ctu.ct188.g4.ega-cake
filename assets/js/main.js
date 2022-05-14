@@ -41,8 +41,9 @@ window.onstorage = updateCartIcon
 function updateCartIcon() {
     let cart = JSON.parse(localStorage.getItem('cart')) || {}
     let sum = Object.values(cart).reduce((sum, quantity) => sum + quantity , 0)
+    console.log(sum)
     if(!sum)
         return
     $('.cart-quantity').textContent = sum < 10 ? sum : '9+'
-    $('.cart-quantity').classList.remove('cart-quantity--hide')
+    $('.cart-quantity').classList.add('cart-quantity--show')
 }
